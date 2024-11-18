@@ -2,9 +2,9 @@
 # This file is distributed under the GPL2.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP Project Manager 2.6.13\n"
+"Project-Id-Version: WP Project Manager 2.6.14\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cpm\n"
-"POT-Creation-Date: 2024-03-29 10:40:46+00:00\n"
+"POT-Creation-Date: 2024-11-11 13:00:56+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -493,6 +493,15 @@ msgstr ""
 
 #: src/Category/Validators/Update_Category.php:12
 msgid "Category ID must be greater than zero"
+msgstr ""
+
+#: src/Comment/Controllers/Comment_Controller.php:88
+#: src/Comment/Controllers/Comment_Controller.php:134
+#: src/Discussion_Board/Controllers/Discussion_Board_Controller.php:82
+#: src/Discussion_Board/Controllers/Discussion_Board_Controller.php:126
+msgid ""
+"The SVG file you attempted to upload contains content that may pose "
+"security risks. Please ensure your file is safe and try again."
 msgstr ""
 
 #: src/Comment/Validators/Create_Comment.php:10
@@ -1198,7 +1207,7 @@ msgstr ""
 #: views/assets/src/components/categories/categories.vue:288
 #: views/assets/src/components/categories/mixin.js:182
 #: views/assets/src/components/common/comments.vue:428
-#: views/assets/src/components/project-discussions/mixin.js:511
+#: views/assets/src/components/project-discussions/mixin.js:524
 #: views/assets/src/components/project-overview/mixin.js:98
 #: views/assets/src/components/project-task-lists/list-comments.vue:436
 #: views/assets/src/components/project-task-lists/mixin.js:412
@@ -2929,7 +2938,7 @@ msgstr ""
 msgid "Make it private"
 msgstr ""
 
-#: views/assets/src/components/project-discussions/mixin.js:558
+#: views/assets/src/components/project-discussions/mixin.js:571
 msgid "Are you sure to delete this comment?"
 msgstr ""
 
