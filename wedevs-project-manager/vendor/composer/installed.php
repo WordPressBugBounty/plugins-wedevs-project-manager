@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'wedevsofficial/wp-project-manager',
-        'pretty_version' => 'v2.6.16',
-        'version' => '2.6.16.0',
-        'reference' => 'aa10bf0db85fa168f8dd53272db03b0e826f519e',
+        'pretty_version' => 'v2.6.17',
+        'version' => '2.6.17.0',
+        'reference' => '797195be849fb8196d032c4d5009c6a4532b0c7b',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'a5hleyrich/wp-background-processing' => array(
-            'pretty_version' => '1.3.1',
-            'version' => '1.3.1.0',
-            'reference' => '6d1e48165e461260075b9f161b3861c7278f71e7',
+            'pretty_version' => '1.4.0',
+            'version' => '1.4.0.0',
+            'reference' => '7ca7cc3504333db3a291bbab7f1917124fba4816',
             'type' => 'library',
             'install_path' => __DIR__ . '/../a5hleyrich/wp-background-processing',
             'aliases' => array(),
@@ -232,9 +232,9 @@
             'dev_requirement' => false,
         ),
         'wedevsofficial/wp-project-manager' => array(
-            'pretty_version' => 'v2.6.16',
-            'version' => '2.6.16.0',
-            'reference' => 'aa10bf0db85fa168f8dd53272db03b0e826f519e',
+            'pretty_version' => 'v2.6.17',
+            'version' => '2.6.17.0',
+            'reference' => '797195be849fb8196d032c4d5009c6a4532b0c7b',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
