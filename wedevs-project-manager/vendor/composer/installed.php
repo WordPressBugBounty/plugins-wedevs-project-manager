@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'wedevsofficial/wp-project-manager',
-        'pretty_version' => 'v2.6.17',
-        'version' => '2.6.17.0',
-        'reference' => '797195be849fb8196d032c4d5009c6a4532b0c7b',
+        'pretty_version' => 'v2.6.20',
+        'version' => '2.6.20.0',
+        'reference' => '0cb66d213dce3ee1a7a76e404910acab9263b3f1',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -119,9 +119,9 @@
             'dev_requirement' => false,
         ),
         'nesbot/carbon' => array(
-            'pretty_version' => '2.72.5',
-            'version' => '2.72.5.0',
-            'reference' => 'afd46589c216118ecd48ff2b95d77596af1e57ed',
+            'pretty_version' => '2.73.0',
+            'version' => '2.73.0.0',
+            'reference' => '9228ce90e1035ff2f0db84b40ec2e023ed802075',
             'type' => 'library',
             'install_path' => __DIR__ . '/../nesbot/carbon',
             'aliases' => array(),
@@ -232,9 +232,9 @@
             'dev_requirement' => false,
         ),
         'wedevsofficial/wp-project-manager' => array(
-            'pretty_version' => 'v2.6.17',
-            'version' => '2.6.17.0',
-            'reference' => '797195be849fb8196d032c4d5009c6a4532b0c7b',
+            'pretty_version' => 'v2.6.20',
+            'version' => '2.6.20.0',
+            'reference' => '0cb66d213dce3ee1a7a76e404910acab9263b3f1',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
