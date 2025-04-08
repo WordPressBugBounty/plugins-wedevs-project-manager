@@ -6,6 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'enshrined\\svgSanitize\\' => array($vendorDir . '/enshrined/svg-sanitize/src'),
     'WeDevs\\PM\\Core\\' => array($baseDir . '/core'),
     'WeDevs\\PM\\' => array($baseDir . '/src'),
     'WeDevs\\ORM\\' => array($vendorDir . '/tareq1988/wp-eloquent/src'),
