@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc40d947236fb3a783f26f53d715c1e75
+class ComposerStaticInit4cc8351564ac2094540f9972212a1a34
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -15,38 +15,38 @@ class ComposerStaticInitc40d947236fb3a783f26f53d715c1e75
     );
 
     public static $prefixLengthsPsr4 = array (
-        'e' => 
+        'e' =>
         array (
             'enshrined\\svgSanitize\\' => 22,
         ),
-        'W' => 
+        'W' =>
         array (
             'WeDevs\\PM\\Core\\' => 15,
             'WeDevs\\PM\\' => 10,
             'WeDevs\\ORM\\' => 11,
         ),
-        'S' => 
+        'S' =>
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Contracts\\Translation\\' => 30,
             'Symfony\\Component\\Translation\\' => 30,
         ),
-        'R' => 
+        'R' =>
         array (
             'Recurr\\' => 7,
         ),
-        'P' => 
+        'P' =>
         array (
             'Psr\\SimpleCache\\' => 16,
             'Psr\\Container\\' => 14,
             'Psr\\Clock\\' => 10,
         ),
-        'L' => 
+        'L' =>
         array (
             'League\\Fractal\\' => 15,
         ),
-        'I' => 
+        'I' =>
         array (
             'Illuminate\\Support\\' => 19,
             'Illuminate\\Pagination\\' => 22,
@@ -54,122 +54,122 @@ class ComposerStaticInitc40d947236fb3a783f26f53d715c1e75
             'Illuminate\\Contracts\\' => 21,
             'Illuminate\\Container\\' => 21,
         ),
-        'D' => 
+        'D' =>
         array (
             'Doctrine\\Inflector\\' => 19,
             'Doctrine\\Deprecations\\' => 22,
             'Doctrine\\Common\\Inflector\\' => 26,
             'Doctrine\\Common\\Collections\\' => 28,
         ),
-        'C' => 
+        'C' =>
         array (
             'Carbon\\Doctrine\\' => 16,
             'Carbon\\' => 7,
         ),
-        'A' => 
+        'A' =>
         array (
             'Appsero\\' => 8,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'enshrined\\svgSanitize\\' => 
+        'enshrined\\svgSanitize\\' =>
         array (
             0 => __DIR__ . '/..' . '/enshrined/svg-sanitize/src',
         ),
-        'WeDevs\\PM\\Core\\' => 
+        'WeDevs\\PM\\Core\\' =>
         array (
             0 => __DIR__ . '/../..' . '/core',
         ),
-        'WeDevs\\PM\\' => 
+        'WeDevs\\PM\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
-        'WeDevs\\ORM\\' => 
+        'WeDevs\\ORM\\' =>
         array (
             0 => __DIR__ . '/..' . '/tareq1988/wp-eloquent/src',
         ),
-        'Symfony\\Polyfill\\Php80\\' => 
+        'Symfony\\Polyfill\\Php80\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
         ),
-        'Symfony\\Polyfill\\Mbstring\\' => 
+        'Symfony\\Polyfill\\Mbstring\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
-        'Symfony\\Contracts\\Translation\\' => 
+        'Symfony\\Contracts\\Translation\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/translation-contracts',
         ),
-        'Symfony\\Component\\Translation\\' => 
+        'Symfony\\Component\\Translation\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
         ),
-        'Recurr\\' => 
+        'Recurr\\' =>
         array (
             0 => __DIR__ . '/..' . '/simshaun/recurr/src/Recurr',
         ),
-        'Psr\\SimpleCache\\' => 
+        'Psr\\SimpleCache\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/simple-cache/src',
         ),
-        'Psr\\Container\\' => 
+        'Psr\\Container\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'Psr\\Clock\\' => 
+        'Psr\\Clock\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/clock/src',
         ),
-        'League\\Fractal\\' => 
+        'League\\Fractal\\' =>
         array (
             0 => __DIR__ . '/..' . '/league/fractal/src',
         ),
-        'Illuminate\\Support\\' => 
+        'Illuminate\\Support\\' =>
         array (
             0 => __DIR__ . '/..' . '/illuminate/support',
         ),
-        'Illuminate\\Pagination\\' => 
+        'Illuminate\\Pagination\\' =>
         array (
             0 => __DIR__ . '/..' . '/illuminate/pagination',
         ),
-        'Illuminate\\Database\\' => 
+        'Illuminate\\Database\\' =>
         array (
             0 => __DIR__ . '/..' . '/illuminate/database',
         ),
-        'Illuminate\\Contracts\\' => 
+        'Illuminate\\Contracts\\' =>
         array (
             0 => __DIR__ . '/..' . '/illuminate/contracts',
         ),
-        'Illuminate\\Container\\' => 
+        'Illuminate\\Container\\' =>
         array (
             0 => __DIR__ . '/..' . '/illuminate/container',
         ),
-        'Doctrine\\Inflector\\' => 
+        'Doctrine\\Inflector\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
         ),
-        'Doctrine\\Deprecations\\' => 
+        'Doctrine\\Deprecations\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/deprecations/src',
         ),
-        'Doctrine\\Common\\Inflector\\' => 
+        'Doctrine\\Common\\Inflector\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
         ),
-        'Doctrine\\Common\\Collections\\' => 
+        'Doctrine\\Common\\Collections\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/collections/lib/Doctrine/Common/Collections',
         ),
-        'Carbon\\Doctrine\\' => 
+        'Carbon\\Doctrine\\' =>
         array (
             0 => __DIR__ . '/..' . '/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine',
         ),
-        'Carbon\\' => 
+        'Carbon\\' =>
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
         ),
-        'Appsero\\' => 
+        'Appsero\\' =>
         array (
             0 => __DIR__ . '/..' . '/appsero/client/src',
         ),
@@ -643,7 +643,6 @@ class ComposerStaticInitc40d947236fb3a783f26f53d715c1e75
         'League\\Fractal\\Serializer\\Serializer' => __DIR__ . '/..' . '/league/fractal/src/Serializer/Serializer.php',
         'League\\Fractal\\Serializer\\SerializerAbstract' => __DIR__ . '/..' . '/league/fractal/src/Serializer/SerializerAbstract.php',
         'League\\Fractal\\TransformerAbstract' => __DIR__ . '/..' . '/league/fractal/src/TransformerAbstract.php',
-        'PM_Create_Table' => __DIR__ . '/../..' . '/db/Create_Table.php',
         'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
         'Psr\\Clock\\ClockInterface' => __DIR__ . '/..' . '/psr/clock/src/ClockInterface.php',
         'Psr\\Container\\ContainerExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerExceptionInterface.php',
@@ -677,7 +676,6 @@ class ComposerStaticInitc40d947236fb3a783f26f53d715c1e75
         'Recurr\\Transformer\\Translator' => __DIR__ . '/..' . '/simshaun/recurr/src/Recurr/Transformer/Translator.php',
         'Recurr\\Transformer\\TranslatorInterface' => __DIR__ . '/..' . '/simshaun/recurr/src/Recurr/Transformer/TranslatorInterface.php',
         'Recurr\\Weekday' => __DIR__ . '/..' . '/simshaun/recurr/src/Recurr/Weekday.php',
-        'RoleTableSeeder' => __DIR__ . '/../..' . '/db/seeds/RoleTableSeeder.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Symfony\\Component\\Translation\\Catalogue\\AbstractOperation' => __DIR__ . '/..' . '/symfony/translation/Catalogue/AbstractOperation.php',
         'Symfony\\Component\\Translation\\Catalogue\\MergeOperation' => __DIR__ . '/..' . '/symfony/translation/Catalogue/MergeOperation.php',
@@ -861,6 +859,7 @@ class ComposerStaticInitc40d947236fb3a783f26f53d715c1e75
         'WeDevs\\PM\\Core\\Permissions\\Create_Milestone' => __DIR__ . '/../..' . '/core/Permissions/Create_Milestone.php',
         'WeDevs\\PM\\Core\\Permissions\\Create_Task' => __DIR__ . '/../..' . '/core/Permissions/Create_Task.php',
         'WeDevs\\PM\\Core\\Permissions\\Create_Task_List' => __DIR__ . '/../..' . '/core/Permissions/Create_Task_List.php',
+        'WeDevs\\PM\\Core\\Permissions\\Create_Users' => __DIR__ . '/../..' . '/core/Permissions/Create_Users.php',
         'WeDevs\\PM\\Core\\Permissions\\Delete_Task' => __DIR__ . '/../..' . '/core/Permissions/Delete_Task.php',
         'WeDevs\\PM\\Core\\Permissions\\Edit_Comment' => __DIR__ . '/../..' . '/core/Permissions/Edit_Comment.php',
         'WeDevs\\PM\\Core\\Permissions\\Edit_Discuss' => __DIR__ . '/../..' . '/core/Permissions/Edit_Discuss.php',
@@ -868,6 +867,7 @@ class ComposerStaticInitc40d947236fb3a783f26f53d715c1e75
         'WeDevs\\PM\\Core\\Permissions\\Edit_Milestone' => __DIR__ . '/../..' . '/core/Permissions/Edit_Milestone.php',
         'WeDevs\\PM\\Core\\Permissions\\Edit_Task' => __DIR__ . '/../..' . '/core/Permissions/Edit_Task.php',
         'WeDevs\\PM\\Core\\Permissions\\Edit_Task_List' => __DIR__ . '/../..' . '/core/Permissions/Edit_Task_List.php',
+        'WeDevs\\PM\\Core\\Permissions\\List_Users' => __DIR__ . '/../..' . '/core/Permissions/List_Users.php',
         'WeDevs\\PM\\Core\\Permissions\\Manager' => __DIR__ . '/../..' . '/core/Permissions/Manager.php',
         'WeDevs\\PM\\Core\\Permissions\\Permission' => __DIR__ . '/../..' . '/core/Permissions/Permission.php',
         'WeDevs\\PM\\Core\\Permissions\\Project_Create_Capability' => __DIR__ . '/../..' . '/core/Permissions/Project_Create_Capability.php',
@@ -875,9 +875,6 @@ class ComposerStaticInitc40d947236fb3a783f26f53d715c1e75
         'WeDevs\\PM\\Core\\Permissions\\Project_Settings_Page_Access' => __DIR__ . '/../..' . '/core/Permissions/Project_Settings_Page_Access.php',
         'WeDevs\\PM\\Core\\Permissions\\Settings_Page_Access' => __DIR__ . '/../..' . '/core/Permissions/Settings_Page_Access.php',
         'WeDevs\\PM\\Core\\Pro\\Menu' => __DIR__ . '/../..' . '/core/Pro/Menu.php',
-        'WeDevs\\PM\\Core\\Promotions\\Offers' => __DIR__ . '/../..' . '/core/Promotions/Offers.php',
-        'WeDevs\\PM\\Core\\Promotions\\Promotions' => __DIR__ . '/../..' . '/core/Promotions/Promotions.php',
-        'WeDevs\\PM\\Core\\Promotions\\Wedevs_Promotion' => __DIR__ . '/../..' . '/core/Promotions/Wedevs_Promotion.php',
         'WeDevs\\PM\\Core\\Router\\Router' => __DIR__ . '/../..' . '/core/Router/Router.php',
         'WeDevs\\PM\\Core\\Router\\Uri_Parser' => __DIR__ . '/../..' . '/core/Router/Uri_Parser.php',
         'WeDevs\\PM\\Core\\Router\\WP_Router' => __DIR__ . '/../..' . '/core/Router/WP_Router.php',
@@ -952,6 +949,8 @@ class ComposerStaticInitc40d947236fb3a783f26f53d715c1e75
         'WeDevs\\PM\\Role\\Validators\\Create_Role' => __DIR__ . '/../..' . '/src/Role/Validators/Create_Role.php',
         'WeDevs\\PM\\Role\\Validators\\Update_Role' => __DIR__ . '/../..' . '/src/Role/Validators/Update_Role.php',
         'WeDevs\\PM\\Search\\Controllers\\Search_Controller' => __DIR__ . '/../..' . '/src/Search/Controllers/Search_Controller.php',
+        'WeDevs\\PM\\Settings\\AI\\Config' => __DIR__ . '/../..' . '/src/Settings/AI/Config.php',
+        'WeDevs\\PM\\Settings\\Controllers\\AI_Settings_Controller' => __DIR__ . '/../..' . '/src/Settings/Controllers/AI_Settings_Controller.php',
         'WeDevs\\PM\\Settings\\Controllers\\Settings_Controller' => __DIR__ . '/../..' . '/src/Settings/Controllers/Settings_Controller.php',
         'WeDevs\\PM\\Settings\\Controllers\\Task_Types_Controller' => __DIR__ . '/../..' . '/src/Settings/Controllers/Task_Types_Controller.php',
         'WeDevs\\PM\\Settings\\Helper\\Settings' => __DIR__ . '/../..' . '/src/Settings/Helper/Settings.php',
@@ -993,6 +992,8 @@ class ComposerStaticInitc40d947236fb3a783f26f53d715c1e75
         'WeDevs\\PM\\User\\Models\\User' => __DIR__ . '/../..' . '/src/User/Models/User.php',
         'WeDevs\\PM\\User\\Models\\User_Role' => __DIR__ . '/../..' . '/src/User/Models/User_Role.php',
         'WeDevs\\PM\\User\\Transformers\\User_Transformer' => __DIR__ . '/../..' . '/src/User/Transformers/User_Transformer.php',
+        'WeDevs_PM_Create_Table' => __DIR__ . '/../..' . '/db/Create_Table.php',
+        'WeDevs_PM_RoleTableSeeder' => __DIR__ . '/../..' . '/db/seeds/RoleTableSeeder.php',
         'enshrined\\svgSanitize\\ElementReference\\Resolver' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/ElementReference/Resolver.php',
         'enshrined\\svgSanitize\\ElementReference\\Subject' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/ElementReference/Subject.php',
         'enshrined\\svgSanitize\\ElementReference\\Usage' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/ElementReference/Usage.php',
@@ -1009,9 +1010,9 @@ class ComposerStaticInitc40d947236fb3a783f26f53d715c1e75
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitc40d947236fb3a783f26f53d715c1e75::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitc40d947236fb3a783f26f53d715c1e75::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitc40d947236fb3a783f26f53d715c1e75::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit4cc8351564ac2094540f9972212a1a34::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit4cc8351564ac2094540f9972212a1a34::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit4cc8351564ac2094540f9972212a1a34::$classMap;
 
         }, null, ClassLoader::class);
     }

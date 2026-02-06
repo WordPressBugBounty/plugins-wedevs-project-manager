@@ -166,7 +166,7 @@ class Container implements ArrayAccess, ContainerContract
     /**
      *  {@inheritdoc}
      */
-    public function has($id)
+    public function has(string $id): bool
     {
         return $this->bound($id);
     }
@@ -618,7 +618,7 @@ class Container implements ArrayAccess, ContainerContract
     /**
      *  {@inheritdoc}
      */
-    public function get($id)
+    public function get(string $id)
     {
         try {
             return $this->resolve($id);
@@ -982,7 +982,7 @@ class Container implements ArrayAccess, ContainerContract
      * @param  \Closure|null  $callback
      * @return void
      */
-    public function resolving($abstract, Closure $callback = null)
+    public function resolving($abstract, ?Closure $callback = null)
     {
         if (is_string($abstract)) {
             $abstract = $this->getAlias($abstract);
@@ -1002,7 +1002,7 @@ class Container implements ArrayAccess, ContainerContract
      * @param  \Closure|null  $callback
      * @return void
      */
-    public function afterResolving($abstract, Closure $callback = null)
+    public function afterResolving($abstract, ?Closure $callback = null)
     {
         if (is_string($abstract)) {
             $abstract = $this->getAlias($abstract);
@@ -1200,7 +1200,7 @@ class Container implements ArrayAccess, ContainerContract
      * @param  \Illuminate\Contracts\Container\Container|null  $container
      * @return \Illuminate\Contracts\Container\Container|static
      */
-    public static function setInstance(ContainerContract $container = null)
+    public static function setInstance(?ContainerContract $container = null)
     {
         return static::$instance = $container;
     }
@@ -1211,7 +1211,7 @@ class Container implements ArrayAccess, ContainerContract
      * @param  string  $key
      * @return bool
      */
-    public function offsetExists($key)
+    public function offsetExists($key): bool
     {
         return $this->bound($key);
     }
@@ -1222,7 +1222,7 @@ class Container implements ArrayAccess, ContainerContract
      * @param  string  $key
      * @return mixed
      */
-    public function offsetGet($key)
+    public function offsetGet($key): mixed
     {
         return $this->make($key);
     }
@@ -1234,7 +1234,7 @@ class Container implements ArrayAccess, ContainerContract
      * @param  mixed   $value
      * @return void
      */
-    public function offsetSet($key, $value)
+    public function offsetSet($key, $value): void
     {
         $this->bind($key, $value instanceof Closure ? $value : function () use ($value) {
             return $value;
@@ -1247,7 +1247,7 @@ class Container implements ArrayAccess, ContainerContract
      * @param  string  $key
      * @return void
      */
-    public function offsetUnset($key)
+    public function offsetUnset($key): void
     {
         unset($this->bindings[$key], $this->instances[$key], $this->resolved[$key]);
     }

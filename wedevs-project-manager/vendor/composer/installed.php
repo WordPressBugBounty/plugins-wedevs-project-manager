@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'wedevsofficial/wp-project-manager',
-        'pretty_version' => 'v2.6.25',
-        'version' => '2.6.25.0',
-        'reference' => '18e8a4433806759cd944363be3f6667a94ac4bfa',
+        'pretty_version' => 'v3.0.2',
+        'version' => '3.0.2.0',
+        'reference' => '71b6da4a7135347bd2e4c085cd0296d213ee96fe',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -65,9 +65,9 @@
             'dev_requirement' => false,
         ),
         'enshrined/svg-sanitize' => array(
-            'pretty_version' => '0.21.0',
-            'version' => '0.21.0.0',
-            'reference' => '5e477468fac5c5ce933dce53af3e8e4e58dcccc9',
+            'pretty_version' => '0.22.0',
+            'version' => '0.22.0.0',
+            'reference' => '0afa95ea74be155a7bcd6c6fb60c276c39984500',
             'type' => 'library',
             'install_path' => __DIR__ . '/../enshrined/svg-sanitize',
             'aliases' => array(),
@@ -241,9 +241,9 @@
             'dev_requirement' => false,
         ),
         'wedevsofficial/wp-project-manager' => array(
-            'pretty_version' => 'v2.6.25',
-            'version' => '2.6.25.0',
-            'reference' => '18e8a4433806759cd944363be3f6667a94ac4bfa',
+            'pretty_version' => 'v3.0.2',
+            'version' => '3.0.2.0',
+            'reference' => '71b6da4a7135347bd2e4c085cd0296d213ee96fe',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

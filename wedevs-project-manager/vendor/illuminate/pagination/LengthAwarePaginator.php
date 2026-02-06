@@ -182,7 +182,7 @@ class LengthAwarePaginator extends AbstractPaginator implements Arrayable, Array
      * Convert the object into something JSON serializable.
      *
      * @return array
-     */
+     */#[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         return $this->toArray();
