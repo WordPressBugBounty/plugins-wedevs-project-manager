@@ -6,7 +6,7 @@ Tags: kanban, project, project management, task management, project manager
 Requires at least: 6.2
 Tested up to: 6.9.1
 Requires PHP: 7.4
-Stable tag: 4.0.0
+Stable tag: 4.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +16,7 @@ Ease Project Management and Task Management using a powerful project manager wit
 ## AI-Powered Project Manager
 [Project Manager](https://wedevs.com/wp-project-manager-pro) is a feature-rich project management plugin built for WordPress users who need structured and organized workflow management.
 
-[youtube https://www.youtube.com/watch?v=GI4u8wXOxHg]
+[youtube https://www.youtube.com/watch?v=Rw769-3DZS0]
 
 Built for teams, agencies, enterprises, and freelancers, Project Manager transforms your WordPress site into a complete project management system with **Kanban Board**, **Gantt Chart**, **Task Manager**, **Milestone Tracking**, **Tasks Calendar**, and **Project Reporting** - all in one place.
 
@@ -240,6 +240,12 @@ A. If you face any issues, you can contact the support team through the official
 14. Manage projects from the frontend
 
 == Changelog ==
+
+= v4.0.1 – May 13, 2026 =
+
+**Improved:** Translated UI strings now load reliably across Activities, Progress, Modules, and other React-based pages.
+**Fixed:** Stale fuzzy translations no longer leak into the interface (e.g. wrong labels on task actions).
+
 
 = v4.0.0 – May 7, 2026 =
 
