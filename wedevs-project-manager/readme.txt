@@ -6,7 +6,7 @@ Tags: kanban, project, project management, task management, project manager
 Requires at least: 6.2
 Tested up to: 6.9.1
 Requires PHP: 7.4
-Stable tag: 4.0.1
+Stable tag: 4.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -135,6 +135,7 @@ By upgrading to Project Manager Pro, you can unlock the full power of project ma
 👉 Explore the [documentation for all the features and functions of Project Manager](https://wedevs.com/docs/wp-project-manager/)
 ## Recognition & Awards
 –   [10 Best WordPress Project Management Plugins (2025 Picks)](https://www.elegantthemes.com/blog/wordpress/best-wordpress-project-management-plugins) (Elegant Themes)
+–   [Top 13 WordPress Project Management Plugins and Tools to Use](https://kinsta.com/blog/wordpress-project-management-plugins/) (Kinsta)
 –   [18 Best WordPress Plugins for Freelancers 2025](https://colorlib.com/wp/freelance-plugins-wordpress/) (Colorlib)
 –   [9 Best WordPress Project Management Plugins](https://blog.hubspot.com/website/best-wordpress-project-management-plugins) (HubSpot)
 –   [14 Best WordPress Project Management Plugins](https://www.hostinger.com/tutorials/wordpress-project-management) (Hostinger)
@@ -240,12 +241,6 @@ A. If you face any issues, you can contact the support team through the official
 14. Manage projects from the frontend
 
 == Changelog ==
-
-= v4.0.1 – May 13, 2026 =
-
-**Improved:** Translated UI strings now load reliably across Activities, Progress, Modules, and other React-based pages.
-**Fixed:** Stale fuzzy translations no longer leak into the interface (e.g. wrong labels on task actions).
-
 
 = v4.0.0 – May 7, 2026 =
 
