@@ -4,9 +4,9 @@ Contributors: tareq1988, nizamuddinbabu, wedevs, asaquzzaman
 Donate Link: https://tareq.co/donate/
 Tags: kanban, project, project management, task management, project manager
 Requires at least: 6.2
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 4.0.1
+Stable tag: 4.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -135,7 +135,6 @@ By upgrading to Project Manager Pro, you can unlock the full power of project ma
 👉 Explore the [documentation for all the features and functions of Project Manager](https://wedevs.com/docs/wp-project-manager/)
 ## Recognition & Awards
 –   [10 Best WordPress Project Management Plugins (2025 Picks)](https://www.elegantthemes.com/blog/wordpress/best-wordpress-project-management-plugins) (Elegant Themes)
-–   [Top 13 WordPress Project Management Plugins and Tools to Use](https://kinsta.com/blog/wordpress-project-management-plugins/) (Kinsta)
 –   [18 Best WordPress Plugins for Freelancers 2025](https://colorlib.com/wp/freelance-plugins-wordpress/) (Colorlib)
 –   [9 Best WordPress Project Management Plugins](https://blog.hubspot.com/website/best-wordpress-project-management-plugins) (HubSpot)
 –   [14 Best WordPress Project Management Plugins](https://www.hostinger.com/tutorials/wordpress-project-management) (Hostinger)
@@ -241,6 +240,30 @@ A. If you face any issues, you can contact the support team through the official
 14. Manage projects from the frontend
 
 == Changelog ==
+
+= v4.0.2 – May 22, 2026 =
+
+**New:** Promotional banner showcases timely WeDevs offers on the Projects and Premium pages, with per-banner dismiss.
+**New:** Right-to-left layout and bundled Arabic translation for RTL locales (ar, he, fa, ur).
+**Improved:** Discussions and comments preserve tables, cell colors, headings, text color, highlight, and alignment when pasted from Excel, Word, or Google Sheets.
+**Improved:** Rich text editor adds headings, color pickers, highlight, text alignment, table insertion, and inline images.
+**Improved:** Editing a comment or discussion lets you add and remove file attachments inline.
+**Improved:** "Share your idea" link now opens the new feedback.wedevs.com board.
+**Improved:** User avatars fall back to initials when no Gravatar is set.
+**Fixed:** Drag-reordering tasks no longer scrambles the order after refresh.
+**Fixed:** Subtask and comment counts stay accurate after edits.
+**Fixed:** Notifications no longer crash when recipients are sent as a list.
+**Fixed:** First-paint route race that briefly bounced users from /invoices to /projects.
+**Fixed:** Premium page hero gradient now renders correctly in light mode.
+**Fixed:** Translatable strings inside conditional arguments now resolve correctly.
+**Fixed:** Sanitizers preserve the value 0 instead of treating it as empty.
+
+
+= v4.0.1 – May 13, 2026 =
+
+**Improved:** Translated UI strings now load reliably across Activities, Progress, Modules, and other React-based pages.
+**Fixed:** Stale fuzzy translations no longer leak into the interface (e.g. wrong labels on task actions).
+
 
 = v4.0.0 – May 7, 2026 =
 
