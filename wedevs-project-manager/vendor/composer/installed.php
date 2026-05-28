@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'wedevsofficial/wp-project-manager',
-        'pretty_version' => 'v4.0.2',
-        'version' => '4.0.2.0',
-        'reference' => '237e7c31feeb479c70062e89bc2a9c214ab03ec9',
+        'pretty_version' => 'v4.0.1',
+        'version' => '4.0.1.0',
+        'reference' => '6558141b15f747b550ae6390d4c3f584150a4e69',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -241,9 +241,9 @@
             'dev_requirement' => false,
         ),
         'wedevsofficial/wp-project-manager' => array(
-            'pretty_version' => 'v4.0.2',
-            'version' => '4.0.2.0',
-            'reference' => '237e7c31feeb479c70062e89bc2a9c214ab03ec9',
+            'pretty_version' => 'v4.0.1',
+            'version' => '4.0.1.0',
+            'reference' => '6558141b15f747b550ae6390d4c3f584150a4e69',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
