@@ -2,14 +2,14 @@
 # This file is distributed under the GPL2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Project Manager 4.0.3\n"
+"Project-Id-Version: Project Manager 4.0.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-project-manager\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-09T05:41:26+00:00\n"
+"POT-Creation-Date: 2026-06-11T06:48:26+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: wedevs-project-manager\n"
@@ -400,7 +400,7 @@ msgstr ""
 #: core/WP/Menu.php:54
 #: languages/wedevs-project-manager.php:514
 #: languages/wedevs-project-manager.php:1179
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:139
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:152
 #: views/assets/src/components/layout/AppSidebar.jsx:65
 #: views/assets/src/components/layout/AppSidebar.jsx:85
 #: views/assets/src/components/layout/AppSidebar.jsx:565
@@ -820,7 +820,7 @@ msgid "Last Name"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:56
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:108
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:117
 #: views/assets/src/components/common/CreateUserDialog.jsx:106
 msgid "Email"
 msgstr ""
@@ -2088,7 +2088,7 @@ msgstr ""
 #: languages/wedevs-project-manager.php:310
 #: languages/wedevs-project-manager.php:1166
 #: views/assets/src/components/admin-settings/SettingsPage.jsx:60
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:110
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:119
 #: views/assets/src/components/layout/AppSidebar.jsx:64
 #: views/assets/src/components/layout/AppSidebar.jsx:84
 #: views/assets/src/components/layout/ProjectSubNavBar.jsx:28
@@ -2187,7 +2187,7 @@ msgstr ""
 
 #: languages/wedevs-project-manager.php:330
 #: views/assets/src/components/admin-settings/SettingsPage.jsx:61
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:111
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:120
 msgid "Pages"
 msgstr ""
 
@@ -3027,7 +3027,7 @@ msgid "Capabilities"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:516
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:115
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:124
 #: views/assets/src/components/common/ProFeaturePlaceholder.jsx:115
 msgid "Integrations"
 msgstr ""
@@ -3182,7 +3182,7 @@ msgid "Task visible for co-worker"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:551
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:88
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:97
 msgid "Pusher"
 msgstr ""
 
@@ -3249,7 +3249,7 @@ msgid "Summary"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:564
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:121
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:130
 #: views/assets/src/components/admin-settings/tabs/AiSettingsTab.jsx:120
 #: views/assets/src/components/admin-settings/tabs/AiSettingsTab.jsx:139
 msgid "AI Settings"
@@ -3498,7 +3498,7 @@ msgid "All Projects"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:618
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:109
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:118
 #: views/assets/src/components/admin-settings/tabs/TaskTypesTab.jsx:111
 #: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:868
 msgid "Task Types"
@@ -4696,11 +4696,13 @@ msgid "Back to WP Admin"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:904
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:158
 #: views/assets/src/components/layout/AppSidebar.jsx:440
 msgid "Collapse sidebar"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:905
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:158
 #: views/assets/src/components/layout/AppSidebar.jsx:440
 msgid "Expand sidebar"
 msgstr ""
@@ -7350,7 +7352,7 @@ msgid "Configure front-end pages for Project Manager."
 msgstr ""
 
 #: views/assets/src/components/admin-settings/SettingsPage.jsx:62
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:97
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:106
 msgid "WooCommerce"
 msgstr ""
 
@@ -7358,28 +7360,28 @@ msgstr ""
 msgid "Automatically create projects from WooCommerce orders."
 msgstr ""
 
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:89
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:98
 msgid "GitHub"
 msgstr ""
 
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:90
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:99
 msgid "Notion"
 msgstr ""
 
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:91
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:100
 msgid "Loom"
 msgstr ""
 
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:105
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:114
 msgid "Configuration"
 msgstr ""
 
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:107
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:116
 #: views/assets/src/components/common/ProFeaturePlaceholder.jsx:115
 msgid "General"
 msgstr ""
 
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:119
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:128
 msgid "Advanced"
 msgstr ""
 
