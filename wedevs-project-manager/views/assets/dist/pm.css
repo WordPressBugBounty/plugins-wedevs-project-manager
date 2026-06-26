@@ -1387,6 +1387,9 @@
 .shrink-0 {
   flex-shrink: 0 !important;
 }
+.grow {
+  flex-grow: 1 !important;
+}
 .caption-bottom {
   caption-side: bottom !important;
 }
@@ -4078,6 +4081,9 @@ body.admin-bar [data-sonner-toaster] {
 }
 .group\/tab:hover .group-hover\/tab\:ml-1 {
   margin-left: 0.25rem !important;
+}
+.group\/tpl:hover .group-hover\/tpl\:inline-flex {
+  display: inline-flex !important;
 }
 .group\/tab:hover .group-hover\/tab\:max-w-fit {
   max-width: -moz-fit-content !important;
