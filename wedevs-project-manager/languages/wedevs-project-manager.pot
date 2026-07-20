@@ -2,14 +2,14 @@
 # This file is distributed under the GPL2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Project Manager 4.0.5\n"
+"Project-Id-Version: Project Manager 4.0.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-project-manager\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-26T04:43:52+00:00\n"
+"POT-Creation-Date: 2026-07-20T05:00:03+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: wedevs-project-manager\n"
@@ -19,9 +19,9 @@ msgstr ""
 #: core/WP/Menu.php:19
 #: languages/wedevs-project-manager.php:386
 #: languages/wedevs-project-manager.php:1181
-#: libs/functions.php:1045
+#: libs/functions.php:1058
 #: views/assets/src/components/common/ProUpgradeModal.jsx:148
-#: views/assets/src/components/layout/AppSidebar.jsx:451
+#: views/assets/src/components/layout/AppSidebar.jsx:473
 #: views/assets/src/components/layout/FrontendLayout.jsx:65
 msgid "Project Manager"
 msgstr ""
@@ -140,8 +140,9 @@ msgstr ""
 #: core/Notifications/Emails/Update_Comment_Notification.php:60
 #: languages/wedevs-project-manager.php:220
 #: src/Task/Helper/Task.php:111
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1106
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:200
+#: views/assets/src/components/KanbanBoard/parts/ImportTaskModal.jsx:107
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1103
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:201
 #: views/assets/src/components/projects/FilesPage/utils.js:41
 #: views/assets/src/components/tasks/TaskFilterBar.jsx:171
 msgid "Task List"
@@ -159,9 +160,8 @@ msgstr ""
 #: views/emails/html/new-task.php:48
 #: views/emails/html/update-task.php:48
 #: views/assets/src/components/common/ProFeaturePlaceholder.jsx:49
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:914
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1105
-#: views/assets/src/components/project-overview/directive.js:10
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:913
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1102
 #: views/assets/src/components/projects/FilesPage/utils.js:40
 msgid "Task"
 msgstr ""
@@ -268,11 +268,11 @@ msgstr ""
 #: core/Pro/Menu.php:45
 #: languages/wedevs-project-manager.php:126
 #: languages/wedevs-project-manager.php:1169
-#: views/assets/src/components/layout/AppSidebar.jsx:231
+#: views/assets/src/components/layout/AppSidebar.jsx:247
 #: views/assets/src/components/layout/FrontendLayout.jsx:26
 #: views/assets/src/components/layout/TopBar.jsx:122
-#: views/assets/src/components/layout/TopBar.jsx:156
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:671
+#: views/assets/src/components/layout/TopBar.jsx:157
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:670
 #: views/assets/src/components/projects/CalendarPage.jsx:69
 #: views/assets/src/components/projects/PremiumPage.jsx:39
 msgid "Calendar"
@@ -281,7 +281,7 @@ msgstr ""
 #: core/Pro/Menu.php:48
 #: languages/wedevs-project-manager.php:275
 #: languages/wedevs-project-manager.php:1172
-#: views/assets/src/components/layout/AppSidebar.jsx:232
+#: views/assets/src/components/layout/AppSidebar.jsx:248
 #: views/assets/src/components/layout/TopBar.jsx:124
 #: views/assets/src/components/projects/MilestonesPage/constants.js:25
 #: views/assets/src/components/projects/PremiumPage.jsx:55
@@ -293,10 +293,10 @@ msgstr ""
 #: core/Pro/Menu.php:50
 #: languages/wedevs-project-manager.php:609
 #: languages/wedevs-project-manager.php:1170
-#: views/assets/src/components/layout/AppSidebar.jsx:233
+#: views/assets/src/components/layout/AppSidebar.jsx:249
 #: views/assets/src/components/layout/FrontendLayout.jsx:27
 #: views/assets/src/components/layout/TopBar.jsx:123
-#: views/assets/src/components/layout/TopBar.jsx:151
+#: views/assets/src/components/layout/TopBar.jsx:152
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:51
 #: views/assets/src/components/projects/ReportsPage.jsx:79
 msgid "Reports"
@@ -304,10 +304,10 @@ msgstr ""
 
 #: core/Pro/Menu.php:52
 #: languages/wedevs-project-manager.php:1176
-#: views/assets/src/components/layout/AppSidebar.jsx:526
-#: views/assets/src/components/layout/AppSidebar.jsx:531
+#: views/assets/src/components/layout/AppSidebar.jsx:548
+#: views/assets/src/components/layout/AppSidebar.jsx:553
 #: views/assets/src/components/layout/TopBar.jsx:126
-#: views/assets/src/components/layout/TopBar.jsx:160
+#: views/assets/src/components/layout/TopBar.jsx:161
 #: views/assets/src/components/projects/ModulesPage.jsx:119
 msgid "Modules"
 msgstr ""
@@ -346,7 +346,7 @@ msgstr ""
 
 #: core/User_Profile/Profile_Update.php:56
 #: languages/wedevs-project-manager.php:629
-#: views/assets/src/components/welcome/WelcomePage.jsx:215
+#: views/assets/src/components/welcome/WelcomePage.jsx:238
 msgid "WP Project Manager"
 msgstr ""
 
@@ -397,18 +397,17 @@ msgid "Get Pro"
 msgstr ""
 
 #: core/WP/Frontend.php:286
-#: core/WP/Menu.php:54
+#: core/WP/Menu.php:84
 #: languages/wedevs-project-manager.php:514
 #: languages/wedevs-project-manager.php:1179
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:152
-#: views/assets/src/components/layout/AppSidebar.jsx:66
-#: views/assets/src/components/layout/AppSidebar.jsx:86
-#: views/assets/src/components/layout/AppSidebar.jsx:567
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:156
+#: views/assets/src/components/layout/AppSidebar.jsx:74
+#: views/assets/src/components/layout/AppSidebar.jsx:93
+#: views/assets/src/components/layout/AppSidebar.jsx:589
 #: views/assets/src/components/layout/ProjectSubNavBar.jsx:29
-#: views/assets/src/components/layout/ProjectSubNavBar.jsx:66
+#: views/assets/src/components/layout/ProjectSubNavBar.jsx:65
 #: views/assets/src/components/layout/TopBar.jsx:118
-#: views/assets/src/components/layout/TopBar.jsx:147
-#: views/assets/src/components/project-settings/router.js:41
+#: views/assets/src/components/layout/TopBar.jsx:148
 #: views/assets/src/components/projects/ProjectsPage/index.jsx:369
 msgid "Settings"
 msgstr ""
@@ -423,12 +422,11 @@ msgstr ""
 #: languages/wedevs-project-manager.php:50
 #: languages/wedevs-project-manager.php:1167
 #: views/assets/src/components/common/GlobalSearch.jsx:148
-#: views/assets/src/components/layout/AppSidebar.jsx:221
+#: views/assets/src/components/layout/AppSidebar.jsx:228
 #: views/assets/src/components/layout/FrontendLayout.jsx:21
 #: views/assets/src/components/layout/TopBar.jsx:120
-#: views/assets/src/components/layout/TopBar.jsx:133
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:884
-#: views/assets/src/components/project-lists/router.js:42
+#: views/assets/src/components/layout/TopBar.jsx:134
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:883
 #: views/assets/src/components/projects/ProjectsPage/index.jsx:709
 msgid "Projects"
 msgstr ""
@@ -439,27 +437,32 @@ msgstr ""
 msgid "My Tasks %s"
 msgstr ""
 
-#: core/WP/Menu.php:43
+#: core/WP/Menu.php:46
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:100
+#: views/assets/src/components/layout/AppSidebar.jsx:261
+msgid "G Workspace"
+msgstr ""
+
+#: core/WP/Menu.php:73
 #: views/assets/src/components/layout/TopBar.jsx:127
-#: views/assets/src/components/layout/TopBar.jsx:162
+#: views/assets/src/components/layout/TopBar.jsx:163
 msgid "Premium"
 msgstr ""
 
-#: core/WP/Menu.php:49
+#: core/WP/Menu.php:79
 #: languages/wedevs-project-manager.php:184
 #: languages/wedevs-project-manager.php:1178
-#: views/assets/src/components/categories/router.js:21
-#: views/assets/src/components/layout/AppSidebar.jsx:565
+#: views/assets/src/components/layout/AppSidebar.jsx:587
 #: views/assets/src/components/layout/FrontendLayout.jsx:31
 #: views/assets/src/components/layout/TopBar.jsx:121
-#: views/assets/src/components/layout/TopBar.jsx:149
+#: views/assets/src/components/layout/TopBar.jsx:150
 #: views/assets/src/components/projects/CategoriesPage.jsx:191
 msgid "Categories"
 msgstr ""
 
-#: core/WP/Menu.php:59
+#: core/WP/Menu.php:89
 #: languages/wedevs-project-manager.php:1180
-#: views/assets/src/components/layout/AppSidebar.jsx:568
+#: views/assets/src/components/layout/AppSidebar.jsx:590
 msgid "Tools"
 msgstr ""
 
@@ -480,17 +483,12 @@ msgid "Co-worker is person who works under a project."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:3
-#: views/assets/src/components/categories/mixin.js:182
-#: views/assets/src/components/project-discussions/mixin.js:524
-#: views/assets/src/components/project-overview/mixin.js:98
-#: views/assets/src/components/project-task-lists/mixin.js:412
-#: views/assets/src/components/project-task-lists/mixin.js:644
 #: views/assets/src/components/projects/CategoriesPage.jsx:134
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:185
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:146
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:188
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:158
 #: views/assets/src/components/projects/FilesPage/index.jsx:78
 #: views/assets/src/components/projects/MilestonesPage/parts/MilestoneCard.jsx:109
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:192
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:193
 msgid "Are you sure?"
 msgstr ""
 
@@ -516,29 +514,34 @@ msgstr ""
 #: views/assets/src/components/admin-settings/tabs/TaskTypesTab.jsx:136
 #: views/assets/src/components/admin-settings/tabs/TaskTypesTab.jsx:169
 #: views/assets/src/components/common/CreateUserDialog.jsx:117
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:343
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:210
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:370
+#: views/assets/src/components/KanbanBoard/parts/ImportTaskModal.jsx:213
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:544
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:342
 #: views/assets/src/components/projects/CategoriesPage.jsx:392
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:380
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:548
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:253
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:383
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:554
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:266
 #: views/assets/src/components/projects/MilestonesPage/parts/ImportTasksDialog.jsx:205
 #: views/assets/src/components/projects/MilestonesPage/parts/MilestoneForm.jsx:61
 #: views/assets/src/components/projects/ProjectCreateSheet.jsx:514
 #: views/assets/src/components/projects/ProjectsPage/index.jsx:854
 #: views/assets/src/components/tasks/MoveTaskDialog.jsx:106
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:406
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:640
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:750
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:829
-#: views/assets/src/components/tasks/TaskListSection.jsx:330
-#: views/assets/src/components/tasks/TaskListSection.jsx:624
-#: views/assets/src/components/tasks/TaskListsPage.jsx:314
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:407
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:638
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:748
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:827
+#: views/assets/src/components/tasks/TaskListSection.jsx:359
+#: views/assets/src/components/tasks/TaskListSection.jsx:691
+#: views/assets/src/components/tasks/TaskListsPage.jsx:331
 #: views/assets/src/hooks/useConfirm.jsx:64
 msgid "Cancel"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:8
 #: views/assets/src/components/common/FileUploadArea.jsx:59
+#: views/assets/src/components/google-workspace/GoogleDriveAttach.jsx:107
 msgid "Attach"
 msgstr ""
 
@@ -558,37 +561,38 @@ msgstr ""
 #: views/emails/html/new-message.php:60
 #: views/emails/html/update-message.php:60
 #: views/assets/src/components/projects/FilesPage/utils.js:39
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:361
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:362
 msgid "Discussion"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:13
 #: views/assets/src/components/admin-settings/tabs/TaskTypesTab.jsx:179
 #: views/assets/src/components/projects/CategoriesPage.jsx:315
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:398
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:356
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:401
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:369
 #: views/assets/src/components/projects/MilestonesPage/parts/MilestoneCard.jsx:245
 #: views/assets/src/components/projects/ProjectsPage/index.jsx:352
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:382
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:738
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:805
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:383
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:736
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:803
 #: views/assets/src/components/tasks/TaskRow.jsx:291
 msgid "Edit"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:14
 #: views/assets/src/components/admin-settings/tabs/TaskTypesTab.jsx:180
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:297
 #: views/assets/src/components/projects/CategoriesPage.jsx:322
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:418
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:376
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:421
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:389
 #: views/assets/src/components/projects/FilesPage/index.jsx:232
 #: views/assets/src/components/projects/MilestonesPage/parts/MilestoneCard.jsx:286
 #: views/assets/src/components/projects/ProjectsPage/index.jsx:382
 #: views/assets/src/components/projects/ProjectsPage/index.jsx:858
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:385
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:518
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:808
-#: views/assets/src/components/tasks/TaskListSection.jsx:418
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:386
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:534
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:806
+#: views/assets/src/components/tasks/TaskListSection.jsx:468
 #: views/assets/src/components/tasks/TaskRow.jsx:321
 msgid "Delete"
 msgstr ""
@@ -598,7 +602,7 @@ msgid "Add a comment"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:16
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:939
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:938
 #: views/assets/src/components/tasks/TaskDetailSheet/parts/fields/TaskTypeField.jsx:66
 msgid "Type"
 msgstr ""
@@ -635,14 +639,16 @@ msgstr ""
 #: languages/wedevs-project-manager.php:1185
 #: views/assets/src/components/common/ProFeaturePlaceholder.jsx:137
 #: views/assets/src/components/common/ProFeaturePlaceholder.jsx:138
+#: views/assets/src/components/KanbanBoard/parts/ImportTaskModal.jsx:135
+#: views/assets/src/components/KanbanBoard/parts/ImportTaskModal.jsx:195
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:48
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:471
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:596
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:617
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:742
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:855
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:889
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1109
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:472
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:595
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:616
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:741
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:854
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:888
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1106
 #: views/assets/src/components/projects/MilestonesPage/constants.js:10
 #: views/assets/src/components/projects/MilestonesPage/constants.js:19
 #: views/assets/src/components/projects/MilestonesPage/index.jsx:186
@@ -651,8 +657,8 @@ msgstr ""
 #: views/assets/src/components/projects/ProjectOverview.jsx:261
 #: views/assets/src/components/projects/ProjectsPage/utils.js:28
 #: views/assets/src/components/projects/ProjectsPage/utils.js:57
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:332
-#: views/assets/src/components/tasks/TaskListSection.jsx:643
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:333
+#: views/assets/src/components/tasks/TaskListSection.jsx:710
 msgid "Completed"
 msgstr ""
 
@@ -675,7 +681,7 @@ msgid "on"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:29
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:514
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:530
 msgid "Copy Link"
 msgstr ""
 
@@ -713,9 +719,9 @@ msgstr ""
 #: src/Task/Helper/Task.php:113
 #: views/emails/html/new-task.php:68
 #: views/emails/html/update-task.php:68
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1109
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1106
 #: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:328
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:633
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:332
 #: views/assets/src/components/tasks/TaskFilterBar.jsx:158
 msgid "Due Date"
 msgstr ""
@@ -725,12 +731,14 @@ msgid "You can fix a date for when this task</br>is planned to be accomplished."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:39
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:555
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1044
+#: views/assets/src/components/KanbanBoard/parts/FilterPanel.jsx:152
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:519
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:556
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1041
 #: views/assets/src/components/projects/CategoriesPage.jsx:222
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:619
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:635
 #: views/assets/src/components/tasks/TaskFilterBar.jsx:204
+#: views/assets/src/components/ui/color-picker.jsx:145
+#: views/assets/src/components/ui/date-picker.jsx:100
 msgid "Clear"
 msgstr ""
 
@@ -767,12 +775,12 @@ msgstr ""
 #: views/assets/src/components/admin-settings/tabs/TaskTypesTab.jsx:131
 #: views/assets/src/components/admin-settings/tabs/TaskTypesTab.jsx:155
 #: views/assets/src/components/common/ProFeaturePlaceholder.jsx:116
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:245
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:246
 #: views/assets/src/components/projects/CategoriesPage.jsx:270
 #: views/assets/src/components/projects/CategoriesPage.jsx:380
-#: views/assets/src/components/projects/MilestonesPage/parts/MilestoneForm.jsx:42
+#: views/assets/src/components/projects/MilestonesPage/parts/MilestoneForm.jsx:43
 #: views/assets/src/components/projects/ProjectCreateSheet.jsx:348
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:730
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:728
 msgid "Description"
 msgstr ""
 
@@ -782,25 +790,21 @@ msgid "Update"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:48
-#: views/assets/src/components/layout/TopBar.jsx:316
-#: views/assets/src/components/project-overview/directive.js:9
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:879
+#: views/assets/src/components/layout/TopBar.jsx:317
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:881
 msgid "Activity"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:49
-#: views/assets/src/components/project-milestones/mixin.js:316
 msgid "Are you sure you want to delete this milestones?"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:51
-#: views/assets/src/components/project-lists/directive.js:84
 msgid "No users found."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:52
 #: views/assets/src/components/common/CreateUserDialog.jsx:71
-#: views/assets/src/components/project-lists/directive.js:85
 msgid "Create a new user"
 msgstr ""
 
@@ -820,7 +824,7 @@ msgid "Last Name"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:56
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:117
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:121
 #: views/assets/src/components/common/CreateUserDialog.jsx:106
 msgid "Email"
 msgstr ""
@@ -834,6 +838,9 @@ msgid "Notify Co-Workers"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:59
+#: views/assets/src/components/ui/color-picker.jsx:155
+#: views/assets/src/components/ui/dialog.jsx:43
+#: views/assets/src/components/ui/sheet.jsx:55
 msgid "Close"
 msgstr ""
 
@@ -842,6 +849,7 @@ msgid "action"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:61
+#: views/assets/src/components/KanbanBoard/parts/FilterPanel.jsx:143
 #: views/assets/src/components/projects/ProjectsPage/index.jsx:363
 #: views/assets/src/components/tasks/TaskFilterBar.jsx:151
 msgid "Complete"
@@ -894,18 +902,18 @@ msgstr ""
 #: languages/wedevs-project-manager.php:73
 #: views/assets/src/components/projects/ProjectOverview.jsx:469
 #: views/assets/src/components/projects/ProjectOverview.jsx:542
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:673
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:740
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:671
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:738
 msgid "Add"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:74
 #: languages/wedevs-project-manager.php:1160
-#: views/assets/src/components/layout/AppSidebar.jsx:51
+#: views/assets/src/components/layout/AppSidebar.jsx:59
 #: views/assets/src/components/layout/ProjectSubNavBar.jsx:18
 #: views/assets/src/components/layout/TopBar.jsx:111
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:330
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:189
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:333
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:201
 #: views/assets/src/components/projects/MilestonesPage/parts/MilestoneCard.jsx:441
 #: views/assets/src/components/projects/ProjectOverview.jsx:268
 #: views/assets/src/components/projects/ProjectsPage/index.jsx:283
@@ -915,21 +923,21 @@ msgstr ""
 #: languages/wedevs-project-manager.php:75
 #: languages/wedevs-project-manager.php:1158
 #: views/assets/src/components/common/GlobalSearch.jsx:163
-#: views/assets/src/components/layout/AppSidebar.jsx:49
+#: views/assets/src/components/layout/AppSidebar.jsx:57
 #: views/assets/src/components/layout/ProjectSubNavBar.jsx:16
 #: views/assets/src/components/layout/TopBar.jsx:109
 #: views/assets/src/components/projects/ProjectOverview.jsx:237
 #: views/assets/src/components/projects/ProjectsPage/index.jsx:284
-#: views/assets/src/components/tasks/TaskListsPage.jsx:218
+#: views/assets/src/components/tasks/TaskListsPage.jsx:233
 msgid "Task Lists"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:76
 #: src/Task/Helper/Task.php:110
 #: views/assets/src/components/common/GlobalSearch.jsx:178
-#: views/assets/src/components/layout/AppSidebar.jsx:222
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:628
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:659
+#: views/assets/src/components/layout/AppSidebar.jsx:229
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:627
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:658
 #: views/assets/src/components/projects/MilestonesPage/parts/MilestoneCard.jsx:409
 #: views/assets/src/components/projects/ProjectOverview.jsx:245
 #: views/assets/src/components/projects/ProjectOverview.jsx:367
@@ -938,17 +946,17 @@ msgid "Tasks"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:77
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:479
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:485
 #: views/assets/src/components/projects/ProgressPage.jsx:126
 #: views/assets/src/components/projects/ProjectsPage/index.jsx:287
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:781
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:779
 msgid "Comments"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:78
 #: languages/wedevs-project-manager.php:1162
-#: views/assets/src/components/layout/AppSidebar.jsx:53
-#: views/assets/src/components/layout/ProjectSubNavBar.jsx:20
+#: views/assets/src/components/layout/AppSidebar.jsx:62
+#: views/assets/src/components/layout/ProjectSubNavBar.jsx:21
 #: views/assets/src/components/layout/TopBar.jsx:113
 #: views/assets/src/components/projects/FilesPage/index.jsx:96
 #: views/assets/src/components/projects/ProjectOverview.jsx:284
@@ -958,7 +966,7 @@ msgstr ""
 
 #: languages/wedevs-project-manager.php:79
 #: languages/wedevs-project-manager.php:1161
-#: views/assets/src/components/layout/AppSidebar.jsx:52
+#: views/assets/src/components/layout/AppSidebar.jsx:60
 #: views/assets/src/components/layout/ProjectSubNavBar.jsx:19
 #: views/assets/src/components/layout/TopBar.jsx:112
 #: views/assets/src/components/projects/MilestonesPage/index.jsx:217
@@ -1005,21 +1013,21 @@ msgid "No results found."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:88
-#: views/assets/src/components/tasks/TaskListsPage.jsx:203
+#: views/assets/src/components/tasks/TaskListsPage.jsx:218
 msgid "New Task List"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:89
 #: languages/wedevs-project-manager.php:956
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:354
 #: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:357
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:223
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:226
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:360
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:235
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:238
 msgid "- Milestone -"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:90
-#: views/assets/src/components/tasks/TaskListSection.jsx:615
+#: views/assets/src/components/tasks/TaskListSection.jsx:682
 msgid "Add Task"
 msgstr ""
 
@@ -1057,24 +1065,26 @@ msgid "Move Task"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:99
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:408
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:366
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:411
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:379
 #: views/assets/src/components/projects/MilestonesPage/parts/MilestoneCard.jsx:273
+#: views/assets/src/components/tasks/TaskListSection.jsx:427
 #: views/assets/src/components/tasks/TaskRow.jsx:310
 msgid "Make Private"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:100
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:406
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:364
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:409
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:377
 #: views/assets/src/components/projects/MilestonesPage/parts/MilestoneCard.jsx:268
+#: views/assets/src/components/tasks/TaskListSection.jsx:425
 #: views/assets/src/components/tasks/TaskRow.jsx:308
 msgid "Make Public"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:101
 #: views/assets/src/components/projects/ProjectsPage/index.jsx:374
-#: views/assets/src/components/tasks/TaskListSection.jsx:401
+#: views/assets/src/components/tasks/TaskListSection.jsx:443
 #: views/assets/src/components/tasks/TaskRow.jsx:296
 msgid "Duplicate"
 msgstr ""
@@ -1127,7 +1137,7 @@ msgid "Task title"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:113
-#: views/assets/src/components/tasks/TaskListsPage.jsx:270
+#: views/assets/src/components/tasks/TaskListsPage.jsx:285
 msgid "Task list name"
 msgstr ""
 
@@ -1142,7 +1152,7 @@ msgstr ""
 #: languages/wedevs-project-manager.php:116
 #: views/assets/src/components/common/ProFeaturePlaceholder.jsx:116
 #: views/assets/src/components/projects/ProjectsPage/index.jsx:512
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:593
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:609
 #: views/assets/src/components/tasks/TaskFilterBar.jsx:147
 msgid "Status"
 msgstr ""
@@ -1169,10 +1179,10 @@ msgstr ""
 #: views/emails/html/new-task.php:79
 #: views/emails/html/update-project.php:49
 #: views/emails/html/update-task.php:80
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:887
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:938
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1107
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:177
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:886
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:937
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1104
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:178
 #: views/assets/src/components/projects/ProjectsPage/index.jsx:509
 msgid "Project"
 msgstr ""
@@ -1222,14 +1232,13 @@ msgid "Complete Task"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:134
-#: views/assets/src/components/my-tasks/directives.js:135
 msgid "Outstanding Task"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:135
 #: views/assets/src/components/tasks/TaskDetailSheet/parts/fields/MilestoneField.jsx:113
-#: views/assets/src/components/tasks/TaskListSection.jsx:533
-#: views/assets/src/components/welcome/WelcomePage.jsx:73
+#: views/assets/src/components/tasks/TaskListSection.jsx:582
+#: views/assets/src/components/welcome/WelcomePage.jsx:74
 msgid "Milestone"
 msgstr ""
 
@@ -1474,7 +1483,7 @@ msgid "Select Color"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:194
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:443
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:444
 msgid "Post Comment"
 msgstr ""
 
@@ -1508,7 +1517,7 @@ msgid "select files"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:202
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:184
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:185
 msgid "Select a project"
 msgstr ""
 
@@ -1518,6 +1527,8 @@ msgstr ""
 
 #: languages/wedevs-project-manager.php:204
 #: languages/wedevs-project-manager.php:1187
+#: views/assets/src/components/KanbanBoard/parts/FilterPanel.jsx:141
+#: views/assets/src/components/KanbanBoard/parts/ImportTaskModal.jsx:132
 #: views/assets/src/components/projects/MilestonesPage/constants.js:15
 #: views/assets/src/components/projects/MilestonesPage/parts/ImportTasksDialog.jsx:119
 #: views/assets/src/components/projects/ProjectsPage/utils.js:59
@@ -1525,6 +1536,7 @@ msgid "All"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:205
+#: views/assets/src/components/KanbanBoard/parts/FilterPanel.jsx:18
 msgid "Any"
 msgstr ""
 
@@ -1533,12 +1545,14 @@ msgid "Over Due"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:207
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:675
+#: views/assets/src/components/KanbanBoard/parts/FilterPanel.jsx:20
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:674
 #: views/assets/src/components/projects/ActivitiesPage/index.jsx:114
 #: views/assets/src/components/projects/ActivitiesPage/index.jsx:232
 #: views/assets/src/components/projects/ActivitiesPage/utils.js:65
 #: views/assets/src/components/projects/ProgressPage.jsx:16
 #: views/assets/src/components/tasks/TaskFilterBar.jsx:162
+#: views/assets/src/components/ui/date-picker.jsx:107
 msgid "Today"
 msgstr ""
 
@@ -1547,49 +1561,52 @@ msgid "Less Than 1 week"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:209
-#: views/assets/src/components/layout/TopBar.jsx:305
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1269
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:318
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:348
+#: views/assets/src/components/KanbanBoard/parts/ImportTaskModal.jsx:104
+#: views/assets/src/components/KanbanBoard/parts/ImportTaskModal.jsx:161
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:338
+#: views/assets/src/components/layout/TopBar.jsx:306
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1266
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:319
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:349
 #: views/assets/src/components/tasks/TaskDetailSheet/parts/fields/TaskTypeField.jsx:83
-#: views/assets/src/components/tasks/TaskListSection.jsx:456
-#: views/assets/src/components/tasks/TaskListSection.jsx:659
+#: views/assets/src/components/tasks/TaskListSection.jsx:506
+#: views/assets/src/components/tasks/TaskListSection.jsx:726
 msgid "Loading..."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:210
 #: views/assets/src/components/common/FileUploadArea.jsx:59
-#: views/assets/src/components/tasks/TaskListSection.jsx:502
+#: views/assets/src/components/tasks/TaskListSection.jsx:552
 msgid "More"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:211
 #: languages/wedevs-project-manager.php:1159
-#: views/assets/src/components/layout/AppSidebar.jsx:50
+#: views/assets/src/components/layout/AppSidebar.jsx:58
 #: views/assets/src/components/layout/ProjectSubNavBar.jsx:17
 #: views/assets/src/components/layout/TopBar.jsx:110
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:49
-#: views/assets/src/components/welcome/WelcomePage.jsx:37
+#: views/assets/src/components/welcome/WelcomePage.jsx:38
 msgid "Overview"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:212
 #: languages/wedevs-project-manager.php:1163
-#: views/assets/src/components/layout/AppSidebar.jsx:61
-#: views/assets/src/components/layout/AppSidebar.jsx:80
+#: views/assets/src/components/layout/AppSidebar.jsx:70
+#: views/assets/src/components/layout/AppSidebar.jsx:88
 #: views/assets/src/components/layout/ProjectSubNavBar.jsx:62
 #: views/assets/src/components/layout/TopBar.jsx:114
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:50
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:660
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:659
 #: views/assets/src/components/projects/ActivitiesPage/index.jsx:102
 #: views/assets/src/components/projects/ProjectOverview.jsx:368
-#: views/assets/src/components/welcome/WelcomePage.jsx:46
+#: views/assets/src/components/welcome/WelcomePage.jsx:47
 msgid "Activities"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:213
 #: views/assets/src/components/projects/MilestonesPage/constants.js:26
-#: views/assets/src/components/projects/MilestonesPage/parts/MilestoneForm.jsx:33
+#: views/assets/src/components/projects/MilestonesPage/parts/MilestoneForm.jsx:34
 msgid "Title"
 msgstr ""
 
@@ -1598,9 +1615,9 @@ msgid "Choose task type"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:215
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:578
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:431
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:857
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:585
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:432
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:856
 msgid "Write a comment..."
 msgstr ""
 
@@ -1642,33 +1659,28 @@ msgid "Date Between"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:225
-#: views/assets/src/components/my-tasks/directives.js:19
 msgid "activity"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:226
-#: views/assets/src/components/my-tasks/directives.js:30
-#: views/assets/src/components/my-tasks/directives.js:134
 msgid "Completed Task"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:227
-#: views/assets/src/components/my-tasks/directives.js:41
 msgid "Assigned Task"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:228
-#: views/assets/src/components/my-tasks/directives.js:133
 msgid "Current Task"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:229
 #: languages/wedevs-project-manager.php:1168
-#: views/assets/src/components/layout/AppSidebar.jsx:222
+#: views/assets/src/components/layout/AppSidebar.jsx:229
 #: views/assets/src/components/layout/FrontendLayout.jsx:22
 #: views/assets/src/components/layout/TopBar.jsx:119
-#: views/assets/src/components/layout/TopBar.jsx:145
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:426
+#: views/assets/src/components/layout/TopBar.jsx:146
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:427
 msgid "My Tasks"
 msgstr ""
 
@@ -1677,8 +1689,8 @@ msgid "Select an User"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:231
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:463
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:170
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:464
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:171
 msgid "New Task"
 msgstr ""
 
@@ -1692,8 +1704,11 @@ msgstr ""
 
 #: languages/wedevs-project-manager.php:234
 #: languages/wedevs-project-manager.php:767
+#: src/Kanban/Controllers/Kanboard_Controller.php:176
 #: views/assets/src/components/common/ProFeaturePlaceholder.jsx:16
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/MyTaskRow.jsx:83
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:131
+#: views/assets/src/components/KanbanBoard/parts/FilterPanel.jsx:19
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/MyTaskRow.jsx:84
 #: views/assets/src/components/projects/MilestonesPage/constants.js:9
 #: views/assets/src/components/projects/MilestonesPage/constants.js:18
 #: views/assets/src/components/projects/MilestonesPage/index.jsx:180
@@ -1707,7 +1722,7 @@ msgid "My Task Overview"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:236
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:551
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:552
 msgid "Activity Filter"
 msgstr ""
 
@@ -1716,19 +1731,19 @@ msgid "At a glance"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:238
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:469
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:594
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:615
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:740
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:470
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:593
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:614
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:739
 msgid "Current"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:239
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:47
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:470
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:595
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:616
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:741
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:471
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:594
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:615
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:740
 msgid "Outstanding"
 msgstr ""
 
@@ -1737,12 +1752,12 @@ msgid "Start at - Due date"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:241
-#: views/assets/src/components/tasks/TaskListSection.jsx:520
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:507
+#: views/assets/src/components/tasks/TaskListSection.jsx:570
 msgid "Due date"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:242
-#: views/assets/src/components/my-tasks/router.js:27
 msgid "My tasks"
 msgstr ""
 
@@ -1925,15 +1940,14 @@ msgstr ""
 
 #: languages/wedevs-project-manager.php:282
 #: languages/wedevs-project-manager.php:1165
-#: views/assets/src/components/layout/AppSidebar.jsx:63
-#: views/assets/src/components/layout/AppSidebar.jsx:82
+#: views/assets/src/components/layout/AppSidebar.jsx:71
+#: views/assets/src/components/layout/AppSidebar.jsx:89
 #: views/assets/src/components/layout/ProjectSubNavBar.jsx:27
-#: views/assets/src/components/layout/ProjectSubNavBar.jsx:64
+#: views/assets/src/components/layout/ProjectSubNavBar.jsx:63
 #: views/assets/src/components/layout/TopBar.jsx:116
-#: views/assets/src/components/project-modules/router.js:42
 #: views/assets/src/components/projects/ModulesPage.jsx:62
 #: views/assets/src/components/projects/PremiumPage.jsx:78
-#: views/assets/src/index.jsx:145
+#: views/assets/src/index.jsx:154
 msgid "Gantt Chart"
 msgstr ""
 
@@ -1944,14 +1958,12 @@ msgstr ""
 
 #: languages/wedevs-project-manager.php:284
 #: languages/wedevs-project-manager.php:1164
-#: views/assets/src/components/layout/AppSidebar.jsx:62
-#: views/assets/src/components/layout/AppSidebar.jsx:81
-#: views/assets/src/components/layout/ProjectSubNavBar.jsx:26
-#: views/assets/src/components/layout/ProjectSubNavBar.jsx:63
+#: views/assets/src/components/KanbanBoard/index.jsx:233
+#: views/assets/src/components/layout/AppSidebar.jsx:61
+#: views/assets/src/components/layout/ProjectSubNavBar.jsx:20
 #: views/assets/src/components/layout/TopBar.jsx:115
 #: views/assets/src/components/projects/ModulesPage.jsx:27
 #: views/assets/src/components/projects/PremiumPage.jsx:84
-#: views/assets/src/index.jsx:142
 msgid "Kanban Board"
 msgstr ""
 
@@ -1995,7 +2007,6 @@ msgid "Track the exact time you spend on specific tasks. With Interval option of
 msgstr ""
 
 #: languages/wedevs-project-manager.php:292
-#: views/assets/src/components/project-settings/router.js:31
 #: views/assets/src/components/projects/PremiumPage.jsx:108
 msgid "Invoice"
 msgstr ""
@@ -2016,10 +2027,12 @@ msgid "Enable the hassle-free and popular payment system with the minimum cost p
 msgstr ""
 
 #: languages/wedevs-project-manager.php:296
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:280
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:281
 #: views/assets/src/components/tasks/TaskDetailSheet/parts/fields/TaskPrivacyField.jsx:64
-#: views/assets/src/components/tasks/TaskListSection.jsx:337
-#: views/assets/src/components/tasks/TaskListsPage.jsx:298
+#: views/assets/src/components/tasks/TaskListSection.jsx:366
+#: views/assets/src/components/tasks/TaskListSection.jsx:459
+#: views/assets/src/components/tasks/TaskListSection.jsx:666
+#: views/assets/src/components/tasks/TaskListsPage.jsx:314
 msgid "Private"
 msgstr ""
 
@@ -2087,14 +2100,14 @@ msgstr ""
 
 #: languages/wedevs-project-manager.php:310
 #: languages/wedevs-project-manager.php:1166
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:60
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:119
-#: views/assets/src/components/layout/AppSidebar.jsx:65
-#: views/assets/src/components/layout/AppSidebar.jsx:85
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:63
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:123
+#: views/assets/src/components/layout/AppSidebar.jsx:73
+#: views/assets/src/components/layout/AppSidebar.jsx:92
 #: views/assets/src/components/layout/ProjectSubNavBar.jsx:28
-#: views/assets/src/components/layout/ProjectSubNavBar.jsx:65
+#: views/assets/src/components/layout/ProjectSubNavBar.jsx:64
 #: views/assets/src/components/layout/TopBar.jsx:117
-#: views/assets/src/index.jsx:148
+#: views/assets/src/index.jsx:157
 msgid "Invoices"
 msgstr ""
 
@@ -2186,8 +2199,8 @@ msgid "Bangladesh"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:330
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:61
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:120
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:64
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:124
 msgid "Pages"
 msgstr ""
 
@@ -2226,7 +2239,7 @@ msgid "Enable Daily Digest"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:339
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:932
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:931
 #: views/assets/src/components/projects/ProjectOverview.jsx:253
 #: views/assets/src/components/tasks/TaskDetailSheet/parts/ProSubtasksSection.jsx:27
 #: views/assets/src/components/tasks/TaskDetailSheet/parts/ProSubtasksSection.jsx:31
@@ -2339,7 +2352,7 @@ msgid "Add New Comment"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:365
-#: views/assets/src/components/tasks/TaskListsPage.jsx:321
+#: views/assets/src/components/tasks/TaskListsPage.jsx:338
 msgid "Add List"
 msgstr ""
 
@@ -2392,17 +2405,16 @@ msgid "Make it private"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:378
-#: views/assets/src/components/project-discussions/mixin.js:571
 msgid "Are you sure to delete this comment?"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:379
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:211
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:223
 msgid "Enter message title"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:380
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:256
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:269
 msgid "Add Message"
 msgstr ""
 
@@ -2526,12 +2538,13 @@ msgstr ""
 #: views/assets/src/components/admin-settings/tabs/NotionSettingsTab.jsx:248
 #: views/assets/src/components/admin-settings/tabs/PagesSettingsTab.jsx:85
 #: views/assets/src/components/admin-settings/tabs/PusherTab.jsx:175
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:373
 #: views/assets/src/components/projects/CategoriesPage.jsx:397
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:376
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:539
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:404
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:749
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:827
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:379
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:545
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:405
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:747
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:825
 #: views/assets/src/components/tasks/TaskDetailSheet/parts/fields/MilestoneField.jsx:127
 msgid "Saving..."
 msgstr ""
@@ -2555,10 +2568,10 @@ msgid "Some details about the project (optional)"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:410
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:286
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:287
 #: views/assets/src/components/projects/ProjectCreateSheet.jsx:385
 #: views/assets/src/components/projects/ProjectOverview.jsx:475
-#: views/assets/src/components/tasks/TaskListSection.jsx:558
+#: views/assets/src/components/tasks/TaskListSection.jsx:607
 msgid "Search users..."
 msgstr ""
 
@@ -2578,7 +2591,6 @@ msgstr ""
 #: languages/wedevs-project-manager.php:414
 #: src/Project/Validators/Create_Project.php:10
 #: src/Project/Validators/Update_Project.php:10
-#: views/assets/src/components/project-overview/mixin.js:26
 msgid "Project title is required."
 msgstr ""
 
@@ -2592,7 +2604,7 @@ msgstr ""
 #: views/assets/src/components/projects/LicensePage.jsx:101
 #: views/assets/src/components/projects/ProjectsPage/utils.js:31
 #: views/assets/src/components/projects/ProjectsPage/utils.js:56
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:598
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:614
 msgid "Active"
 msgstr ""
 
@@ -2712,6 +2724,7 @@ msgid "2022-11-17"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:445
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:375
 msgid "List"
 msgstr ""
 
@@ -2776,34 +2789,39 @@ msgid "Fullscreen"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:461
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:579
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1027
+#: views/assets/src/components/KanbanBoard/index.jsx:243
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:578
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1024
 #: views/assets/src/components/tasks/TaskFilterBar.jsx:120
 msgid "Filter"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:462
 #: languages/wedevs-project-manager.php:764
+#: src/Kanban/Controllers/Kanboard_Controller.php:155
 #: views/assets/src/components/common/ProFeaturePlaceholder.jsx:13
 msgid "Open"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:463
 #: languages/wedevs-project-manager.php:765
+#: src/Kanban/Controllers/Kanboard_Controller.php:162
 #: views/assets/src/components/common/ProFeaturePlaceholder.jsx:14
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:128
 msgid "In Progress"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:464
 #: languages/wedevs-project-manager.php:766
+#: src/Kanban/Controllers/Kanboard_Controller.php:168
 #: views/assets/src/components/common/ProFeaturePlaceholder.jsx:15
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:130
 #: views/assets/src/components/projects/AiCreateDialog/parts/AiLoadingOverlay.jsx:97
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:598
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:614
 msgid "Done"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:465
-#: views/assets/src/components/project-modules/router.js:29
 msgid "Kanban board"
 msgstr ""
 
@@ -2962,7 +2980,7 @@ msgstr ""
 #: languages/wedevs-project-manager.php:501
 #: languages/wedevs-project-manager.php:740
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:24
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:52
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:57
 #: views/assets/src/components/projects/ActivitiesPage/index.jsx:115
 #: views/assets/src/components/projects/ActivitiesPage/index.jsx:233
 #: views/assets/src/components/projects/ProgressPage.jsx:51
@@ -3027,7 +3045,7 @@ msgid "Capabilities"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:516
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:124
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:128
 #: views/assets/src/components/common/ProFeaturePlaceholder.jsx:115
 msgid "Integrations"
 msgstr ""
@@ -3049,6 +3067,9 @@ msgid "More option"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:521
+#: views/assets/src/components/KanbanBoard/parts/FilterPanel.jsx:142
+#: views/assets/src/components/KanbanBoard/parts/ImportTaskModal.jsx:138
+#: views/assets/src/components/KanbanBoard/parts/ImportTaskModal.jsx:196
 #: views/assets/src/components/projects/MilestonesPage/parts/ImportTasksDialog.jsx:120
 #: views/assets/src/components/projects/MilestonesPage/parts/MilestoneCard.jsx:417
 #: views/assets/src/components/tasks/TaskFilterBar.jsx:150
@@ -3069,8 +3090,8 @@ msgid "Add Task List"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:526
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:936
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:227
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:935
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:228
 msgid "Task Title"
 msgstr ""
 
@@ -3092,16 +3113,16 @@ msgstr ""
 
 #: languages/wedevs-project-manager.php:531
 #: languages/wedevs-project-manager.php:841
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:757
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:779
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:999
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:319
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:617
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:756
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:778
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:997
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:320
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:324
 msgid "Start Date"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:532
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:445
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:446
 msgid "Select User"
 msgstr ""
 
@@ -3122,7 +3143,7 @@ msgid "Task title required!"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:537
-#: views/assets/src/components/tasks/TaskListsPage.jsx:284
+#: views/assets/src/components/tasks/TaskListsPage.jsx:299
 msgid "Task list details"
 msgstr ""
 
@@ -3143,13 +3164,13 @@ msgid "Completed Tasks"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:542
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:255
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:274
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:256
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:275
 msgid "Back to Task Lists"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:543
-#: views/assets/src/components/tasks/TaskListSection.jsx:269
+#: views/assets/src/components/tasks/TaskListSection.jsx:298
 msgid "Delete List"
 msgstr ""
 
@@ -3182,7 +3203,7 @@ msgid "Task visible for co-worker"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:551
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:97
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:101
 msgid "Pusher"
 msgstr ""
 
@@ -3249,7 +3270,7 @@ msgid "Summary"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:564
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:130
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:134
 #: views/assets/src/components/admin-settings/tabs/AiSettingsTab.jsx:120
 #: views/assets/src/components/admin-settings/tabs/AiSettingsTab.jsx:139
 msgid "AI Settings"
@@ -3265,6 +3286,7 @@ msgstr ""
 
 #: languages/wedevs-project-manager.php:567
 #: views/assets/src/components/admin-settings/tabs/AiSettingsTab.jsx:164
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:202
 msgid "API Key"
 msgstr ""
 
@@ -3332,6 +3354,7 @@ msgid "Connection successful! AI integration is ready."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:581
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:107
 msgid "Failed to save settings."
 msgstr ""
 
@@ -3461,77 +3484,77 @@ msgid "Date"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:611
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:793
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:792
 msgid "User Name"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:612
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:811
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:810
 msgid "Total Estimation Hours"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:613
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:812
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:811
 msgid "Completed Task Count"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:614
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:813
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:812
 msgid "Avg. Hour Per-task"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:615
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:814
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:813
 msgid "Avg. Work Hour Per-day"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:616
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:815
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:814
 msgid "Avg. Task Per-day"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:617
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:867
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:980
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:983
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:866
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:979
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:982
 msgid "All Projects"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:618
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:118
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:122
 #: views/assets/src/components/admin-settings/tabs/TaskTypesTab.jsx:111
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:868
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:867
 msgid "Task Types"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:619
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:869
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:868
 msgid "Subtask Types"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:620
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:935
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:934
 msgid "Completed At"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:621
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:937
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:936
 msgid "Subtask Title"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:622
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:940
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:939
 msgid "Hour"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:623
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:910
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:913
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:909
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:912
 msgid "Task type"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:624
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:915
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:914
 msgid "Est. Hour"
 msgstr ""
 
@@ -3661,67 +3684,66 @@ msgid "Available in Pro. Unlock & enjoy:"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:654
-#: views/assets/src/components/welcome/WelcomePage.jsx:270
 msgid "Features you can use..."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:655
-#: views/assets/src/components/welcome/WelcomePage.jsx:285
+#: views/assets/src/components/welcome/WelcomePage.jsx:322
 msgid "View All Features"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:656
-#: views/assets/src/components/welcome/WelcomePage.jsx:38
+#: views/assets/src/components/welcome/WelcomePage.jsx:39
 msgid "In the overview section you will get a complete picture of your project. A chart for what has been done in the last 30 days, no of discussion, task lists, milestones and more."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:657
-#: views/assets/src/components/welcome/WelcomePage.jsx:47
+#: views/assets/src/components/welcome/WelcomePage.jsx:48
 msgid "You will also get a complete activity log history from the activities section of your project. All the activity will also be divided by date so it is easier to keep track."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:658
-#: views/assets/src/components/welcome/WelcomePage.jsx:55
+#: views/assets/src/components/welcome/WelcomePage.jsx:56
 msgid "Team Discussion"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:659
-#: views/assets/src/components/welcome/WelcomePage.jsx:56
+#: views/assets/src/components/welcome/WelcomePage.jsx:57
 msgid "There is a built-in discussion panel right inside your projects. Consisting open, group discussion feature. Making team collaboration much more effective."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:660
-#: views/assets/src/components/welcome/WelcomePage.jsx:64
+#: views/assets/src/components/welcome/WelcomePage.jsx:65
 msgid "To-do Lists"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:661
-#: views/assets/src/components/welcome/WelcomePage.jsx:65
+#: views/assets/src/components/welcome/WelcomePage.jsx:66
 msgid "In your projects you get a separate Task List tab to divide your work. You will be able to set due date for a task, set milestone, categorize and more."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:662
-#: views/assets/src/components/welcome/WelcomePage.jsx:74
+#: views/assets/src/components/welcome/WelcomePage.jsx:75
 msgid "In the Milestones tab you will be able to set a specific milestone you want to reach. Set the name, due date, details. You will also see tasks set under each milestone."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:663
-#: views/assets/src/components/welcome/WelcomePage.jsx:82
+#: views/assets/src/components/welcome/WelcomePage.jsx:83
 msgid "Manage Files"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:664
-#: views/assets/src/components/welcome/WelcomePage.jsx:83
+#: views/assets/src/components/welcome/WelcomePage.jsx:84
 msgid "You don't need to rely on a separate file manager. WP Project Manager's Files feature will let you store all your files and see it in one place."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:665
-#: views/assets/src/components/welcome/WelcomePage.jsx:212
+#: views/assets/src/components/welcome/WelcomePage.jsx:235
 msgid "Welcome to"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:666
-#: views/assets/src/components/welcome/WelcomePage.jsx:218
+#: views/assets/src/components/welcome/WelcomePage.jsx:241
 msgid "The best project management tool for WordPress to get things done with your team."
 msgstr ""
 
@@ -3730,16 +3752,17 @@ msgid "Filter, edit, update or take"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:668
-#: views/assets/src/components/welcome/WelcomePage.jsx:226
+#: views/assets/src/components/welcome/WelcomePage.jsx:249
 msgid "Create Your First Project"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:669
-#: views/assets/src/components/welcome/WelcomePage.jsx:240
+#: views/assets/src/components/welcome/WelcomePage.jsx:263
 msgid "Read Full Guide"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:670
+#: views/assets/src/components/KanbanBoard/parts/ImportTaskModal.jsx:221
 #: views/assets/src/components/projects/ToolsPage.jsx:226
 msgid "Import"
 msgstr ""
@@ -3757,19 +3780,19 @@ msgid "Import Now"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:674
-#: views/assets/src/components/welcome/WelcomePage.jsx:295
+#: views/assets/src/components/welcome/WelcomePage.jsx:333
 msgid "Resources of Project Manager"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:675
 #: languages/wedevs-project-manager.php:1171
 #: views/assets/src/components/layout/FrontendLayout.jsx:33
-#: views/assets/src/components/welcome/WelcomePage.jsx:94
+#: views/assets/src/components/welcome/WelcomePage.jsx:95
 msgid "Upgrade"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:676
-#: views/assets/src/components/welcome/WelcomePage.jsx:95
+#: views/assets/src/components/welcome/WelcomePage.jsx:96
 msgid "Get upgraded to Pro version to unlock endless opportunities of managing your project better."
 msgstr ""
 
@@ -3778,8 +3801,8 @@ msgstr ""
 #: views/assets/src/components/common/ProFeaturePlaceholder.jsx:311
 #: views/assets/src/components/common/PromoBanner.jsx:197
 #: views/assets/src/components/common/ProUpgradeModal.jsx:127
-#: views/assets/src/components/layout/AppSidebar.jsx:536
-#: views/assets/src/components/layout/AppSidebar.jsx:547
+#: views/assets/src/components/layout/AppSidebar.jsx:558
+#: views/assets/src/components/layout/AppSidebar.jsx:569
 #: views/assets/src/components/projects/ActivitiesPage/index.jsx:201
 #: views/assets/src/components/projects/CalendarPage.jsx:207
 #: views/assets/src/components/projects/ModulesPage.jsx:152
@@ -3787,7 +3810,7 @@ msgstr ""
 #: views/assets/src/components/projects/PremiumPage.jsx:173
 #: views/assets/src/components/projects/ProgressPage.jsx:187
 #: views/assets/src/components/projects/ReportsPage.jsx:146
-#: views/assets/src/components/welcome/WelcomePage.jsx:96
+#: views/assets/src/components/welcome/WelcomePage.jsx:97
 msgid "Upgrade to Pro"
 msgstr ""
 
@@ -3806,17 +3829,17 @@ msgid "View Pro features"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:681
-#: views/assets/src/components/welcome/WelcomePage.jsx:110
+#: views/assets/src/components/welcome/WelcomePage.jsx:109
 msgid "Module"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:682
-#: views/assets/src/components/welcome/WelcomePage.jsx:111
+#: views/assets/src/components/welcome/WelcomePage.jsx:110
 msgid "Check out all the useful modules that would take your project management experience to a whole new level."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:683
-#: views/assets/src/components/welcome/WelcomePage.jsx:112
+#: views/assets/src/components/welcome/WelcomePage.jsx:111
 msgid "Go to Modules"
 msgstr ""
 
@@ -3845,17 +3868,14 @@ msgid "Save Change"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:690
-#: views/assets/src/helpers/mixin/mixin.js:590
 msgid "Validation error occurred. Please check your input."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:691
-#: views/assets/src/helpers/mixin/mixin.js:607
 msgid "Server error occurred. Please try again."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:692
-#: views/assets/src/helpers/mixin/mixin.js:1117
 msgid "Are you sure to delete this project?"
 msgstr ""
 
@@ -3977,6 +3997,7 @@ msgid "Importing assignees from \"%s\"..."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:721
+#: views/assets/src/components/layout/TopBar.jsx:129
 #: views/assets/src/components/projects/ToolsPage.jsx:244
 msgid "Import Tools"
 msgstr ""
@@ -4058,7 +4079,7 @@ msgstr ""
 
 #: languages/wedevs-project-manager.php:741
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:25
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:53
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:58
 #: views/assets/src/components/projects/ActivitiesPage/index.jsx:116
 #: views/assets/src/components/projects/ActivitiesPage/index.jsx:234
 #: views/assets/src/components/projects/ProgressPage.jsx:52
@@ -4067,7 +4088,7 @@ msgstr ""
 
 #: languages/wedevs-project-manager.php:742
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:26
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:54
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:59
 msgid "Deleted"
 msgstr ""
 
@@ -4411,9 +4432,9 @@ msgid "Activity To"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:843
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:763
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:785
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1007
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:762
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:784
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1004
 msgid "End Date"
 msgstr ""
 
@@ -4687,45 +4708,46 @@ msgid "just now"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:902
-#: views/assets/src/components/layout/AppSidebar.jsx:559
+#: views/assets/src/components/layout/AppSidebar.jsx:581
 msgid "Administration"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:903
-#: views/assets/src/components/layout/AppSidebar.jsx:436
-#: views/assets/src/components/layout/AppSidebar.jsx:582
+#: views/assets/src/components/layout/AppSidebar.jsx:458
+#: views/assets/src/components/layout/AppSidebar.jsx:604
 msgid "Back to WP Admin"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:904
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:158
-#: views/assets/src/components/layout/AppSidebar.jsx:442
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:162
+#: views/assets/src/components/layout/AppSidebar.jsx:464
 msgid "Collapse sidebar"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:905
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:158
-#: views/assets/src/components/layout/AppSidebar.jsx:442
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:162
+#: views/assets/src/components/layout/AppSidebar.jsx:464
 msgid "Expand sidebar"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:906
-#: views/assets/src/components/layout/AppSidebar.jsx:478
+#: views/assets/src/components/layout/AppSidebar.jsx:500
 msgid "Favourites"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:907
-#: views/assets/src/components/layout/AppSidebar.jsx:498
+#: views/assets/src/components/layout/AppSidebar.jsx:520
 msgid "Recent"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:908
-#: views/assets/src/components/layout/AppSidebar.jsx:513
+#: views/assets/src/components/layout/AppSidebar.jsx:535
 msgid "Views"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:909
-#: views/assets/src/components/layout/AppSidebar.jsx:463
+#: views/assets/src/components/layout/AppSidebar.jsx:261
+#: views/assets/src/components/layout/AppSidebar.jsx:485
 msgid "Workspace"
 msgstr ""
 
@@ -4735,17 +4757,17 @@ msgid "Logout"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:911
-#: views/assets/src/components/layout/TopBar.jsx:310
+#: views/assets/src/components/layout/TopBar.jsx:311
 msgid "No notifications yet"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:912
-#: views/assets/src/components/layout/TopBar.jsx:299
+#: views/assets/src/components/layout/TopBar.jsx:300
 msgid "Notifications"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:913
-#: views/assets/src/components/layout/TopBar.jsx:263
+#: views/assets/src/components/layout/TopBar.jsx:264
 msgid "Plugin sidebar"
 msgstr ""
 
@@ -4761,102 +4783,102 @@ msgid "Search..."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:916
-#: views/assets/src/components/layout/TopBar.jsx:207
+#: views/assets/src/components/layout/TopBar.jsx:208
 msgid "Share your idea"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:917
-#: views/assets/src/components/layout/TopBar.jsx:153
+#: views/assets/src/components/layout/TopBar.jsx:154
 msgid "Summary Report"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:918
-#: views/assets/src/components/layout/TopBar.jsx:274
+#: views/assets/src/components/layout/TopBar.jsx:275
 msgid "WordPress sidebar"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:921
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:639
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:638
 msgid "Activity Trend"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:922
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:249
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:250
 msgid "Add a description (optional)"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:923
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:586
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:585
 msgid "At a Glance"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:924
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1059
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1056
 msgid "Due Date ↑"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:925
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1060
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1057
 msgid "Due Date ↓"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:926
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:232
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:233
 msgid "Enter task title"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:927
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:401
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:402
 msgid "Failed to update task"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:928
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1055
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1052
 msgid "Newest"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:929
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1099
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1096
 msgid "No completed tasks yet"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:930
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1096
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1093
 msgid "No current tasks"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:931
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:860
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:859
 msgid "No data"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:932
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1098
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1095
 msgid "No overdue tasks — great job!"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:933
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1056
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1053
 msgid "Oldest"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:934
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:968
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:967
 msgid "Search by Task Title"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:935
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:211
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:212
 msgid "Select a list"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:936
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:771
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:770
 msgid "Select date range and click Run Report."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:937
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1049
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1046
 msgid "Sort:"
 msgstr ""
 
@@ -4941,39 +4963,39 @@ msgid "No categories yet"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:957
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:129
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:141
 msgid "Discussion created"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:958
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:189
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:151
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:192
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:163
 msgid "Discussion deleted"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:959
 #: views/assets/src/components/admin-settings/tabs/PusherTab.jsx:20
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:177
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:180
 msgid "Discussion updated"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:960
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:136
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:148
 msgid "Failed to create discussion"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:961
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:179
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:182
 msgid "Failed to update discussion"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:962
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:272
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:285
 msgid "No discussions yet"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:963
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:275
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:288
 msgid "Start a conversation about this project."
 msgstr ""
 
@@ -5187,8 +5209,8 @@ msgid "Failed to create milestone"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1010
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:192
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:153
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:195
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:165
 #: views/assets/src/components/projects/FilesPage/index.jsx:85
 #: views/assets/src/components/projects/MilestonesPage/parts/MilestoneCard.jsx:117
 msgid "Failed to delete"
@@ -5300,7 +5322,7 @@ msgstr ""
 
 #: languages/wedevs-project-manager.php:1031
 #: views/assets/src/components/projects/MilestonesPage/constants.js:24
-#: views/assets/src/components/projects/MilestonesPage/parts/MilestoneForm.jsx:51
+#: views/assets/src/components/projects/MilestonesPage/parts/MilestoneForm.jsx:52
 msgid "Target Date"
 msgstr ""
 
@@ -5440,6 +5462,7 @@ msgstr ""
 
 #: languages/wedevs-project-manager.php:1058
 #: views/assets/src/components/common/GlobalSearch.jsx:141
+#: views/assets/src/components/KanbanBoard/parts/SearchAddTask.jsx:100
 #: views/assets/src/components/projects/ProjectCreateSheet.jsx:393
 #: views/assets/src/components/projects/ProjectOverview.jsx:479
 msgid "Searching..."
@@ -5529,13 +5552,13 @@ msgid "This action cannot be undone."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1075
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1057
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1054
 #: views/assets/src/components/projects/ProjectsPage/index.jsx:803
 msgid "Title A-Z"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1076
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1058
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1055
 #: views/assets/src/components/projects/ProjectsPage/index.jsx:804
 msgid "Title Z-A"
 msgstr ""
@@ -5546,11 +5569,13 @@ msgid "Generate actionable insights from your project data"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1078
-#: views/assets/src/components/welcome/WelcomePage.jsx:254
+#: views/assets/src/components/welcome/WelcomePage.jsx:289
 msgid "Introduction Video"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1081
+#: views/assets/src/components/KanbanBoard/index.jsx:135
+#: views/assets/src/components/KanbanBoard/parts/KanbanDndBoard.jsx:129
 #: views/assets/src/components/tasks/MoveTaskDialog.jsx:58
 msgid "Failed to move task"
 msgstr ""
@@ -5571,12 +5596,12 @@ msgid "Task moved"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1085
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:305
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:306
 msgid "No incomplete tasks"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1086
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:256
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:257
 msgid "Task list not found."
 msgstr ""
 
@@ -5586,17 +5611,17 @@ msgid "Add type"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1088
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:440
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:453
 msgid "Are you sure you want to delete this task?"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1089
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:320
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:333
 msgid "Assignee added"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1090
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:338
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:351
 msgid "Assignee removed"
 msgstr ""
 
@@ -5606,40 +5631,40 @@ msgid "Click to make private"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1092
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:227
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:125
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:366
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:230
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:126
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:379
 msgid "Comment added"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1093
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:299
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:197
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:421
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:302
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:198
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:434
 msgid "Comment deleted"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1094
 #: views/assets/src/components/admin-settings/tabs/PusherTab.jsx:18
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:287
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:184
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:410
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:290
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:185
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:423
 msgid "Comment updated"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1095
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:315
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:604
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:316
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:620
 msgid "Dates"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1096
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:293
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:306
 msgid "Dates updated"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1097
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:261
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:274
 msgid "Description updated"
 msgstr ""
 
@@ -5648,60 +5673,60 @@ msgid "Estimation (hh:mm)"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1099
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:322
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:335
 msgid "Failed to add assignee"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1100
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:229
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:127
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:368
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:232
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:128
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:381
 msgid "Failed to add comment"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1101
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:301
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:199
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:423
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:304
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:200
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:436
 msgid "Failed to delete comment"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1102
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:340
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:353
 msgid "Failed to remove assignee"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1103
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:289
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:186
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:412
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:292
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:187
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:425
 msgid "Failed to update comment"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1104
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:296
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:309
 msgid "Failed to update dates"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1105
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:264
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:277
 msgid "Failed to update description"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1106
 #: views/assets/src/components/projects/MilestonesPage/parts/MilestoneCard.jsx:139
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:282
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:295
 msgid "Failed to update status"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1107
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:250
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:263
 msgid "Failed to update title"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1108
 #: views/assets/src/components/projects/AiCreateDialog/index.jsx:144
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:502
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:518
 msgid "Full screen"
 msgstr ""
 
@@ -5716,13 +5741,13 @@ msgid "Labels"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1111
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:461
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:472
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:474
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:485
 msgid "Link copied"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1112
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:944
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:958
 msgid "No activity yet"
 msgstr ""
 
@@ -5742,17 +5767,17 @@ msgid "Remove type"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1116
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:648
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:646
 msgid "Set dates"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1117
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:885
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:887
 msgid "Show activity"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1118
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:747
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:745
 msgid "Write a description..."
 msgstr ""
 
@@ -5763,150 +5788,152 @@ msgid "Search tasks..."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1120
+#: views/assets/src/components/KanbanBoard/parts/FilterPanel.jsx:21
 #: views/assets/src/components/tasks/TaskFilterBar.jsx:163
 msgid "This Week"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1121
-#: views/assets/src/components/tasks/TaskListSection.jsx:471
+#: views/assets/src/components/tasks/TaskListSection.jsx:521
 msgid "Add a task"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1122
-#: views/assets/src/components/tasks/TaskListSection.jsx:269
+#: views/assets/src/components/tasks/TaskListSection.jsx:298
 msgid "Delete this list and all its tasks?"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1123
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:217
-#: views/assets/src/components/projects/MilestonesPage/parts/MilestoneForm.jsx:46
-#: views/assets/src/components/tasks/TaskListSection.jsx:513
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:229
+#: views/assets/src/components/projects/MilestonesPage/parts/MilestoneForm.jsx:47
+#: views/assets/src/components/tasks/TaskListSection.jsx:563
 msgid "Description..."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1124
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:158
-#: views/assets/src/components/tasks/TaskListSection.jsx:173
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:159
+#: views/assets/src/components/tasks/TaskListSection.jsx:202
 msgid "Failed to create task"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1125
-#: views/assets/src/components/tasks/TaskListSection.jsx:274
+#: views/assets/src/components/tasks/TaskListSection.jsx:303
 msgid "Failed to delete list"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1126
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:226
-#: views/assets/src/components/tasks/TaskListSection.jsx:299
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:227
+#: views/assets/src/components/tasks/TaskListSection.jsx:328
 msgid "Failed to load more tasks"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1127
-#: views/assets/src/components/tasks/TaskListSection.jsx:265
+#: views/assets/src/components/tasks/TaskListSection.jsx:294
 msgid "Failed to rename"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1128
-#: views/assets/src/components/tasks/TaskListSection.jsx:273
+#: views/assets/src/components/tasks/TaskListSection.jsx:302
 msgid "List deleted"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1129
-#: views/assets/src/components/tasks/TaskListSection.jsx:263
+#: views/assets/src/components/tasks/TaskListSection.jsx:292
 msgid "List renamed"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1130
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:348
-#: views/assets/src/components/tasks/TaskListSection.jsx:659
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:349
+#: views/assets/src/components/tasks/TaskListSection.jsx:726
 msgid "Load more completed"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1131
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:318
-#: views/assets/src/components/tasks/TaskListSection.jsx:456
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:319
+#: views/assets/src/components/tasks/TaskListSection.jsx:506
 msgid "Load more tasks"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1132
-#: views/assets/src/components/tasks/TaskListSection.jsx:500
+#: views/assets/src/components/tasks/TaskListSection.jsx:550
 msgid "More options"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1133
-#: views/assets/src/components/tasks/TaskListSection.jsx:463
+#: views/assets/src/components/tasks/TaskListSection.jsx:513
 msgid "No tasks yet"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1134
-#: views/assets/src/components/tasks/TaskListSection.jsx:386
+#: views/assets/src/components/tasks/TaskListSection.jsx:417
 msgid "Rename"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1135
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:154
-#: views/assets/src/components/tasks/TaskListSection.jsx:171
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:182
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:155
+#: views/assets/src/components/tasks/TaskListSection.jsx:200
 msgid "Task created"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1136
-#: views/assets/src/components/tasks/TaskListSection.jsx:490
+#: views/assets/src/components/tasks/TaskListSection.jsx:540
 msgid "Task name..."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1137
-#: views/assets/src/components/tasks/TaskListSection.jsx:357
+#: views/assets/src/components/tasks/TaskListSection.jsx:386
 msgid "View List"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1138
-#: views/assets/src/components/tasks/TaskListsPage.jsx:198
+#: views/assets/src/components/tasks/TaskListsPage.jsx:213
 msgid "Create your first task list to start organizing work."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1139
 #: views/assets/src/components/admin-settings/tabs/TaskTypesTab.jsx:135
 #: views/assets/src/components/common/CreateUserDialog.jsx:121
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:350
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:349
 #: views/assets/src/components/projects/AiCreateDialog/parts/PreviewStep.jsx:175
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:256
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:269
 #: views/assets/src/components/projects/ProjectCreateSheet.jsx:519
-#: views/assets/src/components/tasks/TaskListsPage.jsx:321
+#: views/assets/src/components/tasks/TaskListsPage.jsx:338
 msgid "Creating..."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1140
-#: views/assets/src/components/tasks/TaskListsPage.jsx:239
+#: views/assets/src/components/tasks/TaskListsPage.jsx:254
 msgid "Expand all"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1141
-#: views/assets/src/components/tasks/TaskListsPage.jsx:142
+#: views/assets/src/components/tasks/TaskListsPage.jsx:155
 msgid "Failed to create task list"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1142
-#: views/assets/src/components/tasks/TaskListsPage.jsx:254
+#: views/assets/src/components/tasks/TaskListsPage.jsx:269
 msgid "New List"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1143
-#: views/assets/src/components/tasks/TaskListsPage.jsx:195
+#: views/assets/src/components/tasks/TaskListsPage.jsx:210
 msgid "No task lists yet"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1144
-#: views/assets/src/components/tasks/TaskListsPage.jsx:352
+#: views/assets/src/components/tasks/TaskListsPage.jsx:369
 msgid "No tasks match your filters."
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1145
-#: views/assets/src/components/tasks/TaskListsPage.jsx:140
+#: views/assets/src/components/tasks/TaskListsPage.jsx:153
 msgid "Task list created"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1146
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:448
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:461
 #: views/assets/src/components/tasks/TaskRow.jsx:102
 msgid "Failed to delete task"
 msgstr ""
@@ -5917,8 +5944,8 @@ msgid "Failed to duplicate task"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1148
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:205
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:175
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:208
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:187
 #: views/assets/src/components/tasks/TaskRow.jsx:128
 msgid "Failed to update privacy"
 msgstr ""
@@ -5940,14 +5967,14 @@ msgid "Private task"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1152
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:203
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:173
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:206
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:185
 #: views/assets/src/components/tasks/TaskRow.jsx:125
 msgid "Set to public"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1153
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:446
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:459
 #: views/assets/src/components/tasks/TaskRow.jsx:100
 msgid "Task deleted"
 msgstr ""
@@ -5959,17 +5986,17 @@ msgstr ""
 
 #: languages/wedevs-project-manager.php:1155
 #: src/Task/Controllers/Task_Controller.php:439
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:396
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:280
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:397
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:293
 #: views/assets/src/components/tasks/TaskRow.jsx:84
 msgid "Task reopened"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1173
-#: views/assets/src/components/layout/AppSidebar.jsx:239
+#: views/assets/src/components/layout/AppSidebar.jsx:255
 #: views/assets/src/components/layout/TopBar.jsx:125
-#: views/assets/src/components/layout/TopBar.jsx:158
-#: views/assets/src/index.jsx:154
+#: views/assets/src/components/layout/TopBar.jsx:159
+#: views/assets/src/index.jsx:163
 msgid "Sprints"
 msgstr ""
 
@@ -5978,9 +6005,9 @@ msgid "Woo Project"
 msgstr ""
 
 #: languages/wedevs-project-manager.php:1175
-#: views/assets/src/components/layout/AppSidebar.jsx:570
+#: views/assets/src/components/layout/AppSidebar.jsx:592
 #: views/assets/src/components/layout/TopBar.jsx:128
-#: views/assets/src/components/layout/TopBar.jsx:164
+#: views/assets/src/components/layout/TopBar.jsx:165
 #: views/assets/src/components/projects/LicensePage.jsx:77
 msgid "License"
 msgstr ""
@@ -6077,7 +6104,7 @@ msgstr ""
 
 #: languages/wedevs-project-manager.php:1208
 #: src/Activity/Helper/Activity.php:1030
-#: src/Activity/Transformers/Activity_Transformer.php:528
+#: src/Activity/Transformers/Activity_Transformer.php:542
 #: src/Pusher/Libs/action.php:88
 #: src/Pusher/Libs/action.php:89
 #: src/Pusher/Libs/action.php:269
@@ -6111,7 +6138,7 @@ msgstr ""
 
 #: languages/wedevs-project-manager.php:1213
 #: views/assets/src/components/projects/AiCreateDialog/index.jsx:144
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:502
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:518
 msgid "Exit full screen"
 msgstr ""
 
@@ -6145,24 +6172,24 @@ msgstr ""
 msgid "Your current PHP version is %1$s. You need to upgrade your PHP version to %2$s or later to run project manager."
 msgstr ""
 
-#: libs/functions.php:737
+#: libs/functions.php:750
 #: src/Discussion_Board/Controllers/Discussion_Board_Controller.php:63
 #: src/Milestone/Controllers/Milestone_Controller.php:89
 #: src/Task_List/Controllers/Task_List_Controller.php:273
 msgid "No elements found."
 msgstr ""
 
-#: libs/functions.php:1361
+#: libs/functions.php:1374
 msgid "PM Admin"
 msgstr ""
 
-#: libs/functions.php:1362
+#: libs/functions.php:1375
 msgid "PM Manager"
 msgstr ""
 
 #. translators: 1: User display name, 2: Project title
 #: src/Activity/Helper/Activity.php:746
-#: src/Activity/Transformers/Activity_Transformer.php:234
+#: src/Activity/Transformers/Activity_Transformer.php:248
 msgid "{{actor.data.display_name}} has created a project titled as {{meta.project_title}}."
 msgstr ""
 
@@ -6203,318 +6230,330 @@ msgstr ""
 
 #. translators: 1: User display name, 2: Discussion board title
 #: src/Activity/Helper/Activity.php:779
-#: src/Activity/Transformers/Activity_Transformer.php:266
+#: src/Activity/Transformers/Activity_Transformer.php:280
 msgid "{{actor.data.display_name}} has created a discussion board titled as {{meta.discussion_board_title}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Deleted discussion board title
 #: src/Activity/Helper/Activity.php:783
-#: src/Activity/Transformers/Activity_Transformer.php:270
+#: src/Activity/Transformers/Activity_Transformer.php:284
 msgid "{{actor.data.display_name}} has deleted a discussion board titled as {{meta.deleted_discussion_board_title}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Old discussion board title, 3: New discussion board title
 #: src/Activity/Helper/Activity.php:787
-#: src/Activity/Transformers/Activity_Transformer.php:274
+#: src/Activity/Transformers/Activity_Transformer.php:288
 msgid "{{actor.data.display_name}} has updated the title of a discussion board from \"{{meta.discussion_board_title_old}}\" to \"{{meta.discussion_board_title_new}}\"."
 msgstr ""
 
 #. translators: 1: User display name, 2: Discussion board title
 #: src/Activity/Helper/Activity.php:791
-#: src/Activity/Transformers/Activity_Transformer.php:278
+#: src/Activity/Transformers/Activity_Transformer.php:292
 msgid "{{actor.data.display_name}} has updated the description of a discussion board, {{meta.discussion_board_title}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Discussion board title
 #: src/Activity/Helper/Activity.php:795
-#: src/Activity/Transformers/Activity_Transformer.php:282
+#: src/Activity/Transformers/Activity_Transformer.php:296
 msgid "{{actor.data.display_name}} has updated the order of a discussion board, {{meta.discussion_board_title}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Discussion board title
 #: src/Activity/Helper/Activity.php:799
-#: src/Activity/Transformers/Activity_Transformer.php:286
+#: src/Activity/Transformers/Activity_Transformer.php:300
 msgid "{{actor.data.display_name}} has updated the status of a discussion board, {{meta.discussion_board_title}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Task list title
 #: src/Activity/Helper/Activity.php:804
-#: src/Activity/Transformers/Activity_Transformer.php:291
+#: src/Activity/Transformers/Activity_Transformer.php:305
 msgid "{{actor.data.display_name}} has created a task list titled as {{meta.task_list_title}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Deleted task list title
 #: src/Activity/Helper/Activity.php:808
-#: src/Activity/Transformers/Activity_Transformer.php:295
+#: src/Activity/Transformers/Activity_Transformer.php:309
 msgid "{{actor.data.display_name}} has deleted a task list titled as {{meta.deleted_task_list_title}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Old task list title, 3: New task list title
 #: src/Activity/Helper/Activity.php:812
-#: src/Activity/Transformers/Activity_Transformer.php:299
+#: src/Activity/Transformers/Activity_Transformer.php:313
 msgid "{{actor.data.display_name}} has updated the title of a task list from \"{{meta.task_list_title_old}}\" to \"{{meta.task_list_title_new}}\"."
 msgstr ""
 
 #. translators: 1: User display name, 2: Task list title
 #: src/Activity/Helper/Activity.php:816
-#: src/Activity/Transformers/Activity_Transformer.php:303
+#: src/Activity/Transformers/Activity_Transformer.php:317
 msgid "{{actor.data.display_name}} has updated the description of a task list, {{meta.task_list_title}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Task list title
 #: src/Activity/Helper/Activity.php:820
-#: src/Activity/Transformers/Activity_Transformer.php:307
+#: src/Activity/Transformers/Activity_Transformer.php:321
 msgid "{{actor.data.display_name}} has updated the order of a task list, {{meta.task_list_title}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Task list title
 #: src/Activity/Helper/Activity.php:824
-#: src/Activity/Transformers/Activity_Transformer.php:311
+#: src/Activity/Transformers/Activity_Transformer.php:325
 msgid "{{actor.data.display_name}} has updated the milestone of a task list, {{meta.task_list_title}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Milestone title
 #: src/Activity/Helper/Activity.php:829
-#: src/Activity/Transformers/Activity_Transformer.php:316
+#: src/Activity/Transformers/Activity_Transformer.php:330
 msgid "{{actor.data.display_name}} has created a milestone titled as {{meta.milestone_title}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Deleted milestone title
 #: src/Activity/Helper/Activity.php:833
-#: src/Activity/Transformers/Activity_Transformer.php:320
+#: src/Activity/Transformers/Activity_Transformer.php:334
 msgid "{{actor.data.display_name}} has deleted a milestone titled as {{meta.deleted_milestone_title}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Old milestone title, 3: New milestone title
 #: src/Activity/Helper/Activity.php:837
-#: src/Activity/Transformers/Activity_Transformer.php:324
+#: src/Activity/Transformers/Activity_Transformer.php:338
 msgid "{{actor.data.display_name}} has updated the title of a milestone from \"{{meta.milestone_title_old}}\" to \"{{meta.milestone_title_new}}\"."
 msgstr ""
 
 #. translators: 1: User display name, 2: Milestone title
 #: src/Activity/Helper/Activity.php:841
-#: src/Activity/Transformers/Activity_Transformer.php:328
+#: src/Activity/Transformers/Activity_Transformer.php:342
 msgid "{{actor.data.display_name}} has updated the description of a milestone, {{meta.milestone_title}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Milestone title, 3: Old start date, 4: New start date
 #: src/Activity/Helper/Activity.php:845
-#: src/Activity/Transformers/Activity_Transformer.php:332
+#: src/Activity/Transformers/Activity_Transformer.php:346
 msgid "{{actor.data.display_name}} has updated the start date of a milestone, {{meta.milestone_title}}, from {{meta.milestone_start_at_old}} to {{meta.milestone_start_at_new}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Milestone title, 3: Old end date, 4: New end date
 #: src/Activity/Helper/Activity.php:849
-#: src/Activity/Transformers/Activity_Transformer.php:336
+#: src/Activity/Transformers/Activity_Transformer.php:350
 msgid "{{actor.data.display_name}} has updated the end date of a milestone, {{meta.milestone_title}}, from {{meta.milestone_end_at_old}} to {{meta.milestone_end_at_new}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Milestone title
 #: src/Activity/Helper/Activity.php:853
-#: src/Activity/Transformers/Activity_Transformer.php:340
+#: src/Activity/Transformers/Activity_Transformer.php:354
 msgid "{{actor.data.display_name}} has updated the order of a milestone, {{meta.milestone_title}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Milestone title, 3: Old achieve date, 4: New achieve date
 #: src/Activity/Helper/Activity.php:857
-#: src/Activity/Transformers/Activity_Transformer.php:344
+#: src/Activity/Transformers/Activity_Transformer.php:358
 msgid "{{actor.data.display_name}} has updated the achieve date of a milestone, {{meta.milestone_title}}, from {{meta.milestone_achive_date_old}} to {{meta.milestone_achive_date_new}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Task title
 #: src/Activity/Helper/Activity.php:862
-#: src/Activity/Transformers/Activity_Transformer.php:349
+#: src/Activity/Transformers/Activity_Transformer.php:363
 msgid "{{actor.data.display_name}} has created a task titled as {{meta.task_title}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Deleted task title
 #: src/Activity/Helper/Activity.php:866
-#: src/Activity/Transformers/Activity_Transformer.php:353
+#: src/Activity/Transformers/Activity_Transformer.php:367
 msgid "{{actor.data.display_name}} has deleted a task titled as {{meta.deleted_task_title}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Old task title, 3: New task title
 #: src/Activity/Helper/Activity.php:870
-#: src/Activity/Transformers/Activity_Transformer.php:357
+#: src/Activity/Transformers/Activity_Transformer.php:371
 msgid "{{actor.data.display_name}} has updated the title of a task from \"{{meta.task_title_old}}\" to \"{{meta.task_title_new}}\"."
 msgstr ""
 
 #. translators: 1: User display name, 2: Task title
 #: src/Activity/Helper/Activity.php:874
-#: src/Activity/Transformers/Activity_Transformer.php:361
+#: src/Activity/Transformers/Activity_Transformer.php:375
 msgid "{{actor.data.display_name}} has updated the description of a task, {{meta.task_title}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Task title, 3: Old start date, 4: New start date
 #: src/Activity/Helper/Activity.php:878
-#: src/Activity/Transformers/Activity_Transformer.php:365
+#: src/Activity/Transformers/Activity_Transformer.php:379
 msgid "{{actor.data.display_name}} has updated the start date of a task, {{meta.task_title}}, from {{meta.task_start_at_old}} to {{meta.task_start_at_new}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Task title, 3: Old due date, 4: New due date
 #: src/Activity/Helper/Activity.php:882
-#: src/Activity/Transformers/Activity_Transformer.php:369
+#: src/Activity/Transformers/Activity_Transformer.php:383
 msgid "{{actor.data.display_name}} has updated the due date of a task, {{meta.task_title}}, from {{meta.task_due_date_old}} to {{meta.task_due_date_new}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Task title, 3: Old estimation, 4: New estimation
 #: src/Activity/Helper/Activity.php:886
-#: src/Activity/Transformers/Activity_Transformer.php:373
+#: src/Activity/Transformers/Activity_Transformer.php:387
 msgid "{{actor.data.display_name}} has updated the estimation of a task, {{meta.task_title}}, from {{meta.task_estimation_old}} to {{meta.task_estimation_new}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Task title, 3: Old complexity, 4: New complexity
 #: src/Activity/Helper/Activity.php:890
-#: src/Activity/Transformers/Activity_Transformer.php:377
+#: src/Activity/Transformers/Activity_Transformer.php:391
 msgid "{{actor.data.display_name}} has updated the complexity of a task, {{meta.task_title}}, from {{meta.task_complexity_old}} to {{meta.task_complexity_new}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Task title, 3: Old priority, 4: New priority
 #: src/Activity/Helper/Activity.php:894
-#: src/Activity/Transformers/Activity_Transformer.php:381
+#: src/Activity/Transformers/Activity_Transformer.php:395
 msgid "{{actor.data.display_name}} has updated the priority of a task, {{meta.task_title}}, from {{meta.task_priority_old}} to {{meta.task_priority_new}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Task title, 3: Old payable status, 4: New payable status
 #: src/Activity/Helper/Activity.php:898
-#: src/Activity/Transformers/Activity_Transformer.php:385
+#: src/Activity/Transformers/Activity_Transformer.php:399
 msgid "{{actor.data.display_name}} has updated the payable status of a task, {{meta.task_title}}, from {{meta.task_payable_old}} to {{meta.task_payable_new}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Task title, 3: Old recurrency, 4: New recurrency
 #: src/Activity/Helper/Activity.php:902
-#: src/Activity/Transformers/Activity_Transformer.php:389
+#: src/Activity/Transformers/Activity_Transformer.php:403
 msgid "{{actor.data.display_name}} has updated the recurrency of a task, {{meta.task_title}}, from {{meta.task_recurrent_old}} to {{meta.task_recurrent_new}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Task title, 3: Old task status, 4: New task status
 #: src/Activity/Helper/Activity.php:906
-#: src/Activity/Transformers/Activity_Transformer.php:393
+#: src/Activity/Transformers/Activity_Transformer.php:407
 msgid "{{actor.data.display_name}} has updated the status of a task, {{meta.task_title}}, from {{meta.task_status_old}} to {{meta.task_status_new}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Old project title
 #: src/Activity/Helper/Activity.php:950
-#: src/Activity/Transformers/Activity_Transformer.php:437
+#: src/Activity/Transformers/Activity_Transformer.php:451
 msgid "{{actor.data.display_name}} has duplicated project from, {{meta.old_project_title}}."
 msgstr ""
 
 #. translators: 1: User display name, 2: Old task list title
 #: src/Activity/Helper/Activity.php:954
-#: src/Activity/Transformers/Activity_Transformer.php:441
+#: src/Activity/Transformers/Activity_Transformer.php:455
 msgid "{{actor.data.display_name}} has duplicated list from, {{meta.old_task_list_title}}."
 msgstr ""
 
 #. translators: 1: Resource type (task, project, etc.), 2: Resource type for meta path
 #: src/Activity/Helper/Activity.php:985
-#: src/Activity/Transformers/Activity_Transformer.php:483
+#: src/Activity/Transformers/Activity_Transformer.php:497
 #, php-format
 msgid "{{actor.data.display_name}} has commented on a %1$s, {{meta.%2$s_title}}."
 msgstr ""
 
 #. translators: 1: Resource type (task, project, etc.), 2: Resource type for meta path
 #: src/Activity/Helper/Activity.php:989
-#: src/Activity/Transformers/Activity_Transformer.php:487
+#: src/Activity/Transformers/Activity_Transformer.php:501
 #, php-format
 msgid "{{actor.data.display_name}} has updated a comment on a %1$s, {{meta.%2$s_title}}."
 msgstr ""
 
 #. translators: 1: Resource type (task, project, etc.), 2: Resource type for meta path
 #: src/Activity/Helper/Activity.php:993
-#: src/Activity/Transformers/Activity_Transformer.php:491
+#: src/Activity/Transformers/Activity_Transformer.php:505
 #, php-format
 msgid "{{actor.data.display_name}} has deleted a comment from a %1$s, {{meta.%2$s_title}}."
 msgstr ""
 
 #. translators: 1: Resource type (task, project, etc.), 2: Resource type for meta path
 #: src/Activity/Helper/Activity.php:997
-#: src/Activity/Transformers/Activity_Transformer.php:495
+#: src/Activity/Transformers/Activity_Transformer.php:509
 #, php-format
 msgid "{{actor.data.display_name}} has replied to a comment on a %1$s, {{meta.%2$s_title}}."
 msgstr ""
 
 #. translators: 1: Resource type (task, project, etc.), 2: Resource type for meta path
 #: src/Activity/Helper/Activity.php:1001
-#: src/Activity/Transformers/Activity_Transformer.php:499
+#: src/Activity/Transformers/Activity_Transformer.php:513
 #, php-format
 msgid "{{actor.data.display_name}} has updated a reply to a comment on a %1$s, {{meta.%2$s_title}}."
 msgstr ""
 
 #. translators: 1: Resource type (task, project, etc.), 2: Resource type for meta path
 #: src/Activity/Helper/Activity.php:1005
-#: src/Activity/Transformers/Activity_Transformer.php:503
+#: src/Activity/Transformers/Activity_Transformer.php:517
 #, php-format
 msgid "{{actor.data.display_name}} has deleted a reply to a comment on a %1$s, {{meta.%2$s_title}}."
 msgstr ""
 
 #: src/Activity/Helper/Activity.php:1021
-#: src/Activity/Transformers/Activity_Transformer.php:519
+#: src/Activity/Transformers/Activity_Transformer.php:533
 msgid "project"
 msgstr ""
 
 #: src/Activity/Helper/Activity.php:1024
-#: src/Activity/Transformers/Activity_Transformer.php:522
+#: src/Activity/Transformers/Activity_Transformer.php:536
 #: src/Pusher/Libs/action.php:283
 #: src/Pusher/Libs/action.php:367
 msgid "discussion board"
 msgstr ""
 
 #: src/Activity/Helper/Activity.php:1027
-#: src/Activity/Transformers/Activity_Transformer.php:525
+#: src/Activity/Transformers/Activity_Transformer.php:539
 #: src/Pusher/Libs/action.php:261
 #: src/Pusher/Libs/action.php:346
 msgid "task list"
 msgstr ""
 
 #: src/Activity/Helper/Activity.php:1033
-#: src/Activity/Transformers/Activity_Transformer.php:531
+#: src/Activity/Transformers/Activity_Transformer.php:545
 msgid "milestone"
 msgstr ""
 
 #: src/Activity/Helper/Activity.php:1036
-#: src/Activity/Transformers/Activity_Transformer.php:534
+#: src/Activity/Transformers/Activity_Transformer.php:548
 msgid "comment"
 msgstr ""
 
 #: src/Activity/Helper/Activity.php:1039
-#: src/Activity/Transformers/Activity_Transformer.php:537
+#: src/Activity/Transformers/Activity_Transformer.php:551
 #: src/Pusher/Libs/action.php:275
 #: src/Pusher/Libs/action.php:359
 msgid "file"
 msgstr ""
 
+#: src/Activity/Transformers/Activity_Transformer.php:237
+msgid "{{actor.data.display_name}} attached a Google Drive file to {{meta.task_title}}."
+msgstr ""
+
+#: src/Activity/Transformers/Activity_Transformer.php:240
+msgid "{{actor.data.display_name}} removed a Google Drive file from {{meta.task_title}}."
+msgstr ""
+
+#: src/Activity/Transformers/Activity_Transformer.php:243
+msgid "{{actor.data.display_name}} started a Google Meet meeting."
+msgstr ""
+
 #. translators: 1: User display name, 2: Old project title, 3: New project title
-#: src/Activity/Transformers/Activity_Transformer.php:238
+#: src/Activity/Transformers/Activity_Transformer.php:252
 msgid "{{actor.data.display_name}} has updated project title from \"{{meta.project_title_old}}\" to \"{{meta.project_title_new}}\"."
 msgstr ""
 
 #. translators: 1: User display name, 2: Project title
-#: src/Activity/Transformers/Activity_Transformer.php:242
+#: src/Activity/Transformers/Activity_Transformer.php:256
 msgid "{{actor.data.display_name}} has updated {{meta.project_title}} project description."
 msgstr ""
 
 #. translators: 1: User display name, 2: Old project status, 3: New project status
-#: src/Activity/Transformers/Activity_Transformer.php:246
+#: src/Activity/Transformers/Activity_Transformer.php:260
 msgid "{{actor.data.display_name}} has updated project status from \"{{meta.project_status_old}}\" to \"{{meta.project_status_new}}\"."
 msgstr ""
 
 #. translators: 1: User display name, 2: Old project budget, 3: New project budget
-#: src/Activity/Transformers/Activity_Transformer.php:250
+#: src/Activity/Transformers/Activity_Transformer.php:264
 msgid "{{actor.data.display_name}} has updated project budget from \"{{meta.project_budget_old}}\" to \"{{meta.project_budget_new}}\"."
 msgstr ""
 
 #. translators: 1: User display name, 2: Old project pay rate, 3: New project pay rate
-#: src/Activity/Transformers/Activity_Transformer.php:254
+#: src/Activity/Transformers/Activity_Transformer.php:268
 msgid "{{actor.data.display_name}} has updated project pay rate from \"{{meta.project_pay_rate_old}}\" to \"{{meta.project_pay_rate_new}}\"."
 msgstr ""
 
 #. translators: 1: User display name, 2: Old project estimated completion date, 3: New project estimated completion date
-#: src/Activity/Transformers/Activity_Transformer.php:258
+#: src/Activity/Transformers/Activity_Transformer.php:272
 msgid "{{actor.data.display_name}} has updated project est completion date from \"{{meta.project_est_completion_date_old}}\" to \"{{meta.project_est_completion_date_new}}\"."
 msgstr ""
 
 #. translators: 1: User display name, 2: Old project color code, 3: New project color code
-#: src/Activity/Transformers/Activity_Transformer.php:262
+#: src/Activity/Transformers/Activity_Transformer.php:276
 msgid "{{actor.data.display_name}} has updated project color code from \"{{meta.project_color_code_old}}\" to \"{{meta.project_color_code_new}}\"."
 msgstr ""
 
@@ -6672,6 +6711,113 @@ msgstr ""
 
 #: src/GitHub/Controllers/GitHub_Preview_Controller.php:415
 msgid "Unable to fetch data from GitHub."
+msgstr ""
+
+#: src/Google_Workspace/Controllers/Drive_Controller.php:24
+msgid "Google Drive integration is disabled."
+msgstr ""
+
+#: src/Google_Workspace/Controllers/Drive_Controller.php:28
+msgid "Google Picker is not fully configured. An administrator must add the API key and App ID."
+msgstr ""
+
+#: src/Google_Workspace/Controllers/Drive_Controller.php:33
+msgid "Connect your Google account first."
+msgstr ""
+
+#: src/Google_Workspace/Controllers/Drive_Controller.php:140
+#: src/Google_Workspace/Controllers/Drive_Controller.php:190
+msgid "This attachment target does not belong to the current project."
+msgstr ""
+
+#: src/Google_Workspace/Controllers/Drive_Controller.php:181
+msgid "You are not allowed to attach Google Drive files in this project."
+msgstr ""
+
+#: src/Google_Workspace/Controllers/Drive_Controller.php:185
+msgid "Invalid attachment target."
+msgstr ""
+
+#: src/Google_Workspace/Controllers/Drive_Controller.php:194
+msgid "Google Drive in comments is turned off."
+msgstr ""
+
+#: src/Google_Workspace/Controllers/Drive_Controller.php:198
+msgid "You can only attach Drive files to your own comment."
+msgstr ""
+
+#: src/Google_Workspace/Controllers/Drive_Controller.php:202
+msgid "No file provided."
+msgstr ""
+
+#: src/Google_Workspace/Controllers/Drive_Controller.php:241
+msgid "You are not allowed to remove Google Drive files in this project."
+msgstr ""
+
+#: src/Google_Workspace/Controllers/Drive_Controller.php:247
+msgid "You can only remove Drive files from your own comment."
+msgstr ""
+
+#: src/Google_Workspace/Controllers/OAuth_Controller.php:47
+msgid "Google credentials are not configured. Ask an administrator to add the Client ID and Secret."
+msgstr ""
+
+#: src/Google_Workspace/Loader.php:129
+msgid "You must be logged in to connect Google."
+msgstr ""
+
+#: src/Kanban/Controllers/Kanboard_Controller.php:96
+#: src/Kanban/Controllers/Kanboard_Controller.php:201
+#: src/Kanban/Controllers/Kanboard_Controller.php:254
+#: src/Kanban/Controllers/Kanboard_Controller.php:280
+#: src/Kanban/Controllers/Kanboard_Controller.php:327
+#: src/Kanban/Controllers/Kanboard_Controller.php:337
+#: src/Kanban/Controllers/Kanboard_Controller.php:932
+msgid "Board not found"
+msgstr ""
+
+#: src/Kanban/Controllers/Kanboard_Controller.php:100
+msgid "Task does not belong to this project."
+msgstr ""
+
+#: src/Kanban/Controllers/Kanboard_Controller.php:332
+msgid "One or more tasks do not belong to this project."
+msgstr ""
+
+#: src/Kanban/Controllers/Kanboard_Controller.php:518
+msgid "Plase remove the 'task lists' item from others column"
+msgstr ""
+
+#: src/Kanban/Controllers/Kanboard_Controller.php:523
+msgid "You have selectd 'Newlyadded' option for others column"
+msgstr ""
+
+#: src/Kanban/Controllers/Kanboard_Controller.php:540
+msgid "Please remove the 'Newlyadded' option from others column"
+msgstr ""
+
+#: src/Kanban/Controllers/Kanboard_Controller.php:554
+msgid "'"
+msgstr ""
+
+#: src/Kanban/Controllers/Kanboard_Controller.php:574
+msgid "You have already selected 'completed tasks' in others column"
+msgstr ""
+
+#: src/Kanban/Controllers/Kanboard_Controller.php:590
+msgid "You have selectd 'in progress' in others column"
+msgstr ""
+
+#: src/Kanban/Controllers/Kanboard_Controller.php:609
+msgid "You have already selected 'completed task status' in others column"
+msgstr ""
+
+#: src/Kanban/Controllers/Kanboard_Controller.php:623
+msgid "You have already selected 'incomplete task status' in others column"
+msgstr ""
+
+#: src/Kanban/Permissions/Kanboard_Permission.php:25
+msgid "This task already exist in this board"
 msgstr ""
 
 #: src/Loom/Controllers/Loom_Preview_Controller.php:60
@@ -7343,45 +7489,45 @@ msgstr ""
 msgid "to dismiss"
 msgstr ""
 
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:60
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:63
 msgid "Create and manage invoices for your projects."
 msgstr ""
 
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:61
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:64
 msgid "Configure front-end pages for Project Manager."
 msgstr ""
 
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:62
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:106
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:65
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:110
 msgid "WooCommerce"
 msgstr ""
 
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:62
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:65
 msgid "Automatically create projects from WooCommerce orders."
 msgstr ""
 
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:98
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:102
 msgid "GitHub"
 msgstr ""
 
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:99
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:103
 msgid "Notion"
 msgstr ""
 
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:100
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:104
 msgid "Loom"
 msgstr ""
 
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:114
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:118
 msgid "Configuration"
 msgstr ""
 
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:116
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:120
 #: views/assets/src/components/common/ProFeaturePlaceholder.jsx:115
 msgid "General"
 msgstr ""
 
-#: views/assets/src/components/admin-settings/SettingsPage.jsx:128
+#: views/assets/src/components/admin-settings/SettingsPage.jsx:132
 msgid "Advanced"
 msgstr ""
 
@@ -7536,6 +7682,9 @@ msgstr ""
 
 #: views/assets/src/components/admin-settings/tabs/GeneralTab.jsx:214
 #: views/assets/src/components/common/CommentAttachment.jsx:198
+#: views/assets/src/components/google-workspace/GoogleDriveAttach.jsx:140
+#: views/assets/src/components/google-workspace/GoogleDriveAttach.jsx:180
+#: views/assets/src/components/KanbanBoard/parts/KanbanCard.jsx:63
 #: views/assets/src/components/projects/ProjectOverview.jsx:595
 msgid "Remove"
 msgstr ""
@@ -7608,8 +7757,136 @@ msgstr ""
 msgid "Select \"repo\" scope for private repository access"
 msgstr ""
 
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:82
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:164
+msgid "Google Drive enabled."
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:82
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:164
+msgid "Google Drive disabled."
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:85
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:96
+msgid "Failed to update."
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:93
+msgid "Drive in comments enabled."
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:93
+msgid "Drive in comments disabled."
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:105
+msgid "Google Workspace settings saved."
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:117
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:98
+msgid "Google Workspace"
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:120
+msgid "Set up your Google Cloud project once. Users then connect their own account."
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:126
+msgid "Setup guide"
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:136
+msgid "Enable Google Drive"
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:137
+msgid "Show Google Drive in the sidebar and on tasks. Turn off to hide it everywhere."
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:145
+msgid "Allow Drive in comments"
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:146
+msgid "Let team members attach Drive files inside comments. Turn off to hide the Drive button in comments only."
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:156
+msgid "Google Calendar sync"
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:156
+msgid "Two-way sync of task due dates and milestones with Google Calendar."
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:161
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:192
+#: views/assets/src/components/projects/ActivitiesPage/parts/ActivityItem.jsx:55
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:950
+msgid "Google Meet"
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:161
+msgid "Generate Google Meet links on tasks and discussions."
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:166
+msgid "Google Workspace is configured. Users can now connect their accounts."
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:170
+msgid "API credentials & keys"
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:174
+msgid "Authorized redirect URI"
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:181
+msgid "Add this exact URI to your Google OAuth client (Web application)."
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:189
+msgid "Client ID"
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:193
+msgid "Client Secret"
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:198
+msgid "saved — leave blank to keep"
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:204
+msgid "Used by the Google Picker. Create under Credentials → API key, and enable the Picker API."
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:207
+msgid "App ID (project number)"
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:209
+msgid "Your Google Cloud project number (Dashboard → Project info)."
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:212
+msgid "Saving…"
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:212
+msgid "Save credentials"
+msgstr ""
+
+#: views/assets/src/components/admin-settings/tabs/GoogleWorkspaceSettingsTab.jsx:218
+msgid "Open Google Cloud Console"
+msgstr ""
+
 #: views/assets/src/components/admin-settings/tabs/InvoiceSettingsTab/index.jsx:105
 #: views/assets/src/components/admin-settings/tabs/PagesSettingsTab.jsx:50
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:96
 msgid "Failed to save"
 msgstr ""
 
@@ -7863,13 +8140,13 @@ msgid "Actions"
 msgstr ""
 
 #: views/assets/src/components/admin-settings/tabs/TaskTypesTab.jsx:168
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:376
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:539
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:404
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:639
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:749
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:827
-#: views/assets/src/components/tasks/TaskListSection.jsx:329
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:379
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:545
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:405
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:637
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:747
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:825
+#: views/assets/src/components/tasks/TaskListSection.jsx:358
 msgid "Save"
 msgstr ""
 
@@ -8181,115 +8458,632 @@ msgstr ""
 msgid "Insert Image"
 msgstr ""
 
-#: views/assets/src/components/layout/AppSidebar.jsx:221
+#: views/assets/src/components/google-workspace/DriveCommentInsert.jsx:26
+msgid "Drive file"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/DriveCommentInsert.jsx:59
+msgid "Add Google Drive file"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/DrivePickerModal.jsx:60
+msgid "Opening Google Drive…"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/DrivePickerModal.jsx:66
+msgid "Could not start Google Picker."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/DrivePickerModal.jsx:97
+msgid "Failed to load Google Picker."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/DrivePickerModal.jsx:143
+msgid "File attached."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleDriveAttach.jsx:66
+msgid "File removed."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleDriveAttach.jsx:95
+#: views/assets/src/components/google-workspace/GoogleDriveStage.jsx:66
+msgid "Add from Drive"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleDriveAttach.jsx:95
+#: views/assets/src/components/google-workspace/GoogleDriveAttach.jsx:104
+#: views/assets/src/components/google-workspace/GoogleDriveStage.jsx:66
+msgid "Admin must add the API key and App ID first."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleDriveAttach.jsx:111
+msgid "Your project role can view Drive files but not attach them."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleDriveAttach.jsx:112
+msgid "View only"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleDriveAttach.jsx:116
+#: views/assets/src/components/google-workspace/GoogleDriveStage.jsx:73
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:131
+msgid "Connect Google"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleDriveAttach.jsx:158
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:153
+#: views/assets/src/components/projects/ActivitiesPage/parts/ActivityItem.jsx:51
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:946
+msgid "Google Drive"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleDriveAttach.jsx:165
+msgid "No Drive files attached."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleDriveAttach.jsx:194
+msgid "Show less"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleDriveAttach.jsx:195
+msgid "Show all"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleDriveCommentButton.jsx:47
+msgid "Add from Google Drive"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:65
+msgid "Google account connected."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:66
+msgid "Could not connect Google account. Try again."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:67
+msgid "Google connection was cancelled."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:68
+msgid "Security check failed. Please retry."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:84
+msgid "Could not start Google connection."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:89
+msgid "Google account disconnected."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:90
+msgid "Failed to disconnect."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:99
+msgid "Connect your Google account to use Google features inside Project Manager."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:106
+msgid "Your Google connection expired (site security keys changed). Please reconnect — your attached files are unaffected."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:115
+msgid "Google Workspace isn’t set up yet. An administrator needs to add the credentials under Settings → Google Workspace."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:121
+msgid "Connected as"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:121
+msgid "Google account"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:124
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:212
+msgid "Disconnect"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:129
+msgid "Connect your Google account to browse and attach Drive files to tasks."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:131
+msgid "Redirecting…"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:139
+msgid "All Google features — Drive, Calendar and Meet — use this one account."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:145
+msgid "Connected services"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:154
+msgid "Attach Drive files to tasks, comments, discussions and files."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:166
+msgid "Failed to update Drive setting."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:171
+msgid "Off"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:175
+msgid "Drive is turned off. An administrator can enable it in Settings → Google Workspace."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:177
+msgid "Connect your Google account above to use Drive."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:185
+msgid "Google Calendar"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:185
+msgid "Two-way sync task due dates and milestones with Google Calendar."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:192
+msgid "Generate Meet links for tasks and discussions."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:198
+msgid "Disconnect this Google account?"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:200
+msgid "This unlinks your Google account from Project Manager. Here’s what happens:"
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:204
+msgid "Calendar events created from your tasks and milestones are removed from Google Calendar."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:205
+msgid "Drive files you attached stay listed, but you can’t open or attach more until you reconnect."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:206
+msgid "All Google features (Drive, Calendar, Meet) stop working for you until you reconnect."
+msgstr ""
+
+#: views/assets/src/components/google-workspace/GoogleWorkspacePage.jsx:207
+msgid "You can reconnect anytime — your data isn’t deleted."
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/index.jsx:86
+msgid "Section created"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/index.jsx:89
+msgid "Failed to create section"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/index.jsx:96
+msgid "Delete this column?"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/index.jsx:96
+msgid "Delete Column"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/index.jsx:100
+msgid "Column deleted"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/index.jsx:103
+msgid "Failed to delete column"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/index.jsx:118
+msgid "Task removed"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/index.jsx:121
+msgid "Failed to remove task"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/index.jsx:145
+msgid "Task added"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/index.jsx:155
+msgid "Tasks imported"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/index.jsx:205
+msgid "Filter failed"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:93
+msgid "Automation updated"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:106
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:275
+msgid "Manage Automation"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:112
+msgid "Choose a preset to automate your kanbanboard and sync with Task Lists"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:117
+msgid "Move Tasks"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:124
+msgid "Select Type"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:125
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:319
+#: views/assets/src/components/projects/ProjectCreateSheet.jsx:336
+#: views/assets/src/components/tasks/TaskDetailSheet/parts/fields/MilestoneField.jsx:127
+#: views/assets/src/components/tasks/TaskDetailSheet/parts/fields/MilestoneField.jsx:152
+#: views/assets/src/components/tasks/TaskListSection.jsx:589
+msgid "None"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:126
+msgid "To Do"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:137
+msgid "This column will not be automated"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:144
+msgid "Move task here when..."
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:155
+msgid "Newly added"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:159
+msgid "Tasks added recently on any task lists will be automatically moved here."
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:172
+msgid "Task lists"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:176
+msgid "Tasks added only in the selected task lists will be automatically moved here."
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:221
+msgid "Reopened tasks"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:225
+msgid "If a closed task in this project reopens, it will automatically move here."
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:235
+msgid "Move issue here when..."
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:247
+msgid "Completed tasks"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:251
+msgid "Issues will automatically move here when marked as complete."
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:261
+msgid "Tasks that are past their due date will automatically move to this column."
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:271
+msgid "Assign User"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:274
+msgid "Select team members to be assigned automatically when a task dropped in this column."
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:308
+msgid "Change task status"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:323
+msgid "Dropping task here has no progress status"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:334
+msgid "Completed task"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:338
+msgid "Dropping task here will automatically mark the task as complete."
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:351
+msgid "Incompleted task"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:355
+msgid "Dropping task here will automatically mark the task as incomplete."
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/AutomationModal.jsx:373
+msgid "Update Automation"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/ColorPickerDialog.jsx:34
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:287
+msgid "Background Color"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/ColorPickerDialog.jsx:45
+msgid "Remove Color"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/ColorPickerDialog.jsx:48
+#: views/assets/src/components/KanbanBoard/parts/FilterPanel.jsx:148
+msgid "Apply"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/FilterPanel.jsx:22
+msgid "No Due Date"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/FilterPanel.jsx:78
+msgid "Search title (min 3 chars)..."
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/FilterPanel.jsx:87
+#: views/assets/src/components/KanbanBoard/parts/FilterPanel.jsx:90
+msgid "All Users"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/FilterPanel.jsx:106
+#: views/assets/src/components/KanbanBoard/parts/FilterPanel.jsx:109
+msgid "All Lists"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/FilterPanel.jsx:122
+#: views/assets/src/components/KanbanBoard/parts/FilterPanel.jsx:125
+msgid "Any Due Date"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/FilterPanel.jsx:138
+msgid "All Status"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/ImportTaskModal.jsx:100
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:281
+msgid "Import Task"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/ImportTaskModal.jsx:113
+#: views/assets/src/components/KanbanBoard/parts/ImportTaskModal.jsx:116
+msgid "Select Task List"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/ImportTaskModal.jsx:155
+#: views/assets/src/components/projects/MilestonesPage/parts/ImportTasksDialog.jsx:164
+msgid "Select All"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/ImportTaskModal.jsx:165
+#: views/assets/src/components/KanbanBoard/parts/SearchAddTask.jsx:104
+msgid "No tasks found"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:189
+msgid "Failed"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:237
+msgid "Double-click to rename"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:338
+msgid "Scroll for more"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:349
+msgid "What needs to be done?"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:371
+msgid "Choose list"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:387
+msgid "No lists"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:415
+msgid "Assign users"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:426
+msgid "assigned"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:432
+#: views/assets/src/components/tasks/TaskListSection.jsx:600
+msgid "Assign"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:445
+msgid "No users"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:498
+msgid "Pick due date"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:552
+#: views/assets/src/components/tasks/TaskListSection.jsx:682
+msgid "Adding..."
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:552
+#: views/assets/src/components/KanbanBoard/parts/KanbanBoardColumn.jsx:563
+#: views/assets/src/components/tasks/TaskListSection.jsx:398
+#: views/assets/src/components/tasks/TaskListSection.jsx:399
+msgid "Add task"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/KanbanCard.jsx:34
+msgid "Remove this task from the board?"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/KanbanCard.jsx:35
+msgid "Remove Task"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/KanbanDndBoard.jsx:95
+msgid "Board reordered"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/KanbanDndBoard.jsx:97
+msgid "Failed to reorder boards"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/KanbanDndBoard.jsx:175
+msgid "+ Add new section"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/SearchAddTask.jsx:68
+msgid "Search & add existing task"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/SearchAddTask.jsx:79
+msgid "Add existing task"
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/SearchAddTask.jsx:87
+msgid "Search by title (min 3 chars)..."
+msgstr ""
+
+#: views/assets/src/components/KanbanBoard/parts/SearchAddTask.jsx:96
+msgid "Type at least 3 characters to search"
+msgstr ""
+
+#: views/assets/src/components/layout/AppSidebar.jsx:228
 msgid "Proj"
 msgstr ""
 
-#: views/assets/src/components/layout/AppSidebar.jsx:231
+#: views/assets/src/components/layout/AppSidebar.jsx:247
 msgid "Cal"
 msgstr ""
 
-#: views/assets/src/components/layout/AppSidebar.jsx:232
+#: views/assets/src/components/layout/AppSidebar.jsx:248
 msgid "Prog"
 msgstr ""
 
-#: views/assets/src/components/layout/AppSidebar.jsx:233
+#: views/assets/src/components/layout/AppSidebar.jsx:249
 msgid "Rep"
 msgstr ""
 
-#: views/assets/src/components/layout/AppSidebar.jsx:239
+#: views/assets/src/components/layout/AppSidebar.jsx:255
 #: views/assets/src/components/projects/ModulesPage.jsx:76
 #: views/assets/src/components/tasks/TaskDetailSheet/parts/ProInlineProperties.jsx:53
 #: views/assets/src/components/tasks/TaskDetailSheet/parts/ProInlineProperties.jsx:56
 msgid "Sprint"
 msgstr ""
 
-#: views/assets/src/components/layout/AppSidebar.jsx:565
+#: views/assets/src/components/layout/AppSidebar.jsx:587
 msgid "Cat"
 msgstr ""
 
-#: views/assets/src/components/layout/AppSidebar.jsx:567
+#: views/assets/src/components/layout/AppSidebar.jsx:589
 msgid "Set"
 msgstr ""
 
-#: views/assets/src/components/layout/AppSidebar.jsx:569
-#: views/assets/src/index.jsx:131
+#: views/assets/src/components/layout/AppSidebar.jsx:591
+#: views/assets/src/index.jsx:143
 msgid "Templates"
 msgstr ""
 
-#: views/assets/src/components/layout/AppSidebar.jsx:569
+#: views/assets/src/components/layout/AppSidebar.jsx:591
 msgid "Tmpl"
 msgstr ""
 
-#: views/assets/src/components/layout/AppSidebar.jsx:570
+#: views/assets/src/components/layout/AppSidebar.jsx:592
 msgid "Lic"
 msgstr ""
 
-#: views/assets/src/components/layout/TopBar.jsx:218
+#: views/assets/src/components/layout/TopBar.jsx:219
 msgid "What's New"
 msgstr ""
 
-#: views/assets/src/components/layout/TopBar.jsx:247
+#: views/assets/src/components/layout/TopBar.jsx:248
 msgid "Switch to light mode"
 msgstr ""
 
-#: views/assets/src/components/layout/TopBar.jsx:247
+#: views/assets/src/components/layout/TopBar.jsx:248
 msgid "Switch to dark mode"
 msgstr ""
 
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:30
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:58
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:63
 msgid "created a project"
 msgstr ""
 
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:31
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:60
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:65
 msgid "created a task"
 msgstr ""
 
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:32
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:61
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:66
 msgid "deleted a task"
 msgstr ""
 
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:33
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:62
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:67
 msgid "updated task title"
 msgstr ""
 
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:34
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:64
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:69
 msgid "updated task status"
 msgstr ""
 
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:35
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:65
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:66
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:70
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:71
 msgid "updated task start date"
 msgstr ""
 
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:36
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:67
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:72
 msgid "updated task due date"
 msgstr ""
 
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:37
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:70
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:75
 msgid "created a task list"
 msgstr ""
 
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:38
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:73
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:78
 msgid "created a milestone"
 msgstr ""
 
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:39
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:75
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:80
 msgid "created a discussion"
 msgstr ""
 
 #: views/assets/src/components/my-tasks/MyTasksPage/constants.js:40
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:76
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:81
 msgid "commented on a task"
 msgstr ""
 
@@ -8297,31 +9091,31 @@ msgstr ""
 msgid "Current Tasks"
 msgstr ""
 
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:346
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:347
 msgid "Start Date and End Date are required."
 msgstr ""
 
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:348
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:349
 msgid "Start Date is required."
 msgstr ""
 
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:350
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:351
 msgid "End Date is required."
 msgstr ""
 
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:356
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1017
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1018
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:357
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1014
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1015
 msgid "Start Date cannot be greater than End Date."
 msgstr ""
 
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:396
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:280
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:397
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:293
 #: views/assets/src/components/tasks/TaskRow.jsx:84
 msgid "Task completed"
 msgstr ""
 
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:561
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:562
 msgid "From"
 msgstr ""
 
@@ -8329,86 +9123,98 @@ msgstr ""
 msgid "To"
 msgstr ""
 
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:767
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:789
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:766
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:788
 msgid "Run Report"
 msgstr ""
 
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:854
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:853
 msgid "Est. Hours"
 msgstr ""
 
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:888
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:887
 msgid "Assigned"
 msgstr ""
 
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:890
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:889
 msgid "Working H"
 msgstr ""
 
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:891
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:890
 msgid "Est. H"
 msgstr ""
 
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1001
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:999
 msgid "to"
 msgstr ""
 
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1195
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1192
 msgid "No activities found"
 msgstr ""
 
-#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1269
+#: views/assets/src/components/my-tasks/MyTasksPage/index.jsx:1266
 msgid "Load more"
 msgstr ""
 
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:257
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:655
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:258
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:653
 msgid "Assignees"
 msgstr ""
 
-#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:350
+#: views/assets/src/components/my-tasks/MyTasksPage/parts/NewTaskSheet.jsx:349
 msgid "Create Task"
 msgstr ""
 
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:59
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:64
 msgid "updated project title"
 msgstr ""
 
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:63
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:68
 msgid "updated task description"
 msgstr ""
 
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:68
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:73
 msgid "updated task estimation"
 msgstr ""
 
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:69
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:74
 msgid "updated task priority"
 msgstr ""
 
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:71
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:76
 msgid "deleted a task list"
 msgstr ""
 
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:72
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:77
 msgid "updated task list title"
 msgstr ""
 
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:74
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:79
 msgid "deleted a milestone"
 msgstr ""
 
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:77
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:82
 msgid "commented on a discussion"
 msgstr ""
 
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:78
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:83
 msgid "commented on a project"
 msgstr ""
 
-#: views/assets/src/components/projects/ActivitiesPage/constants.js:79
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:84
 msgid "replied to a comment"
+msgstr ""
+
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:85
+msgid "attached a Google Drive file"
+msgstr ""
+
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:86
+msgid "removed a Google Drive file"
+msgstr ""
+
+#: views/assets/src/components/projects/ActivitiesPage/constants.js:87
+msgid "started a Google Meet meeting"
 msgstr ""
 
 #: views/assets/src/components/projects/ActivitiesPage/index.jsx:191
@@ -8421,6 +9227,11 @@ msgstr ""
 
 #: views/assets/src/components/projects/ActivitiesPage/index.jsx:257
 msgid "activities"
+msgstr ""
+
+#: views/assets/src/components/projects/ActivitiesPage/parts/ActivityItem.jsx:47
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:942
+msgid "Google Drive file"
 msgstr ""
 
 #: views/assets/src/components/projects/CalendarPage.jsx:72
@@ -8453,22 +9264,22 @@ msgstr ""
 msgid "Description (optional)"
 msgstr ""
 
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:115
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:118
 msgid "Failed to load discussion"
 msgstr ""
 
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:185
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:146
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:188
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:158
 msgid "Delete Discussion"
 msgstr ""
 
-#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:203
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:173
+#: views/assets/src/components/projects/DiscussionsPage/DiscussionDetailPage.jsx:206
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:185
 #: views/assets/src/components/tasks/TaskRow.jsx:125
 msgid "Set to private"
 msgstr ""
 
-#: views/assets/src/components/projects/DiscussionsPage/index.jsx:200
+#: views/assets/src/components/projects/DiscussionsPage/index.jsx:212
 msgid "New Discussion"
 msgstr ""
 
@@ -8510,10 +9321,6 @@ msgstr ""
 msgid "task linked"
 msgstr ""
 
-#: views/assets/src/components/projects/MilestonesPage/parts/ImportTasksDialog.jsx:164
-msgid "Select All"
-msgstr ""
-
 #: views/assets/src/components/projects/MilestonesPage/parts/MilestoneCard.jsx:80
 msgid "Unlink Task"
 msgstr ""
@@ -8539,7 +9346,7 @@ msgstr ""
 msgid "Sort"
 msgstr ""
 
-#: views/assets/src/components/projects/MilestonesPage/parts/MilestoneForm.jsx:37
+#: views/assets/src/components/projects/MilestonesPage/parts/MilestoneForm.jsx:38
 msgid "Milestone title"
 msgstr ""
 
@@ -8597,13 +9404,6 @@ msgstr ""
 
 #: views/assets/src/components/projects/ProjectCreateSheet.jsx:330
 msgid "Category"
-msgstr ""
-
-#: views/assets/src/components/projects/ProjectCreateSheet.jsx:336
-#: views/assets/src/components/tasks/TaskDetailSheet/parts/fields/MilestoneField.jsx:127
-#: views/assets/src/components/tasks/TaskDetailSheet/parts/fields/MilestoneField.jsx:152
-#: views/assets/src/components/tasks/TaskListSection.jsx:540
-msgid "None"
 msgstr ""
 
 #: views/assets/src/components/projects/ProjectCreateSheet.jsx:400
@@ -8702,40 +9502,40 @@ msgstr ""
 msgid "Moving..."
 msgstr ""
 
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:192
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:193
 msgid "Delete Comment"
 msgstr ""
 
-#: views/assets/src/components/tasks/SingleTaskListPage.jsx:443
+#: views/assets/src/components/tasks/SingleTaskListPage.jsx:444
 #: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:869
 msgid "Sending..."
 msgstr ""
 
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:440
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:453
 msgid "Delete Task"
 msgstr ""
 
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:474
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:487
 msgid "Could not copy link"
 msgstr ""
 
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:612
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:627
 msgid "Start"
 msgstr ""
 
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:628
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:634
 msgid "Due"
 msgstr ""
 
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:680
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:678
 msgid "Search members..."
 msgstr ""
 
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:685
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:683
 msgid "No project members"
 msgstr ""
 
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:763
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:761
 msgid "No description yet. Click \"Add\" to write one."
 msgstr ""
 
@@ -8743,7 +9543,7 @@ msgstr ""
 msgid "Add Comment"
 msgstr ""
 
-#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:885
+#: views/assets/src/components/tasks/TaskDetailSheet/index.jsx:887
 msgid "Hide activity"
 msgstr ""
 
@@ -8792,35 +9592,39 @@ msgstr ""
 msgid "Assignee"
 msgstr ""
 
-#: views/assets/src/components/tasks/TaskListSection.jsx:244
+#: views/assets/src/components/tasks/TaskListSection.jsx:160
+msgid "Failed to update list privacy"
+msgstr ""
+
+#: views/assets/src/components/tasks/TaskListSection.jsx:273
 msgid "Failed to reorder tasks"
 msgstr ""
 
 #: views/assets/src/components/tasks/TaskListSection.jsx:409
+msgid "List options"
+msgstr ""
+
+#: views/assets/src/components/tasks/TaskListSection.jsx:451
 msgid "Archive"
 msgstr ""
 
-#: views/assets/src/components/tasks/TaskListSection.jsx:502
+#: views/assets/src/components/tasks/TaskListSection.jsx:552
 msgid "Less"
 msgstr ""
 
-#: views/assets/src/components/tasks/TaskListSection.jsx:551
-msgid "Assign"
+#: views/assets/src/components/tasks/TaskListsPage.jsx:146
+msgid "Failed to set list privacy"
 msgstr ""
 
-#: views/assets/src/components/tasks/TaskListSection.jsx:615
-msgid "Adding..."
-msgstr ""
-
-#: views/assets/src/components/tasks/TaskListsPage.jsx:239
+#: views/assets/src/components/tasks/TaskListsPage.jsx:254
 msgid "Collapse all"
 msgstr ""
 
-#: views/assets/src/components/tasks/TaskListsPage.jsx:347
+#: views/assets/src/components/tasks/TaskListsPage.jsx:364
 msgid "result"
 msgstr ""
 
-#: views/assets/src/components/tasks/TaskListsPage.jsx:347
+#: views/assets/src/components/tasks/TaskListsPage.jsx:364
 msgid "results"
 msgstr ""
 
@@ -8832,46 +9636,106 @@ msgstr ""
 msgid "High"
 msgstr ""
 
+#: views/assets/src/components/ui/color-picker.jsx:97
+msgid "Color picker"
+msgstr ""
+
+#: views/assets/src/components/ui/date-picker.jsx:79
+msgid "dd/mm/yyyy"
+msgstr ""
+
+#: views/assets/src/components/ui/pagination.jsx:14
+msgid "pagination"
+msgstr ""
+
+#: views/assets/src/components/ui/pagination.jsx:54
+msgid "Go to previous page"
+msgstr ""
+
+#: views/assets/src/components/ui/pagination.jsx:59
+msgid "Previous"
+msgstr ""
+
+#: views/assets/src/components/ui/pagination.jsx:69
+msgid "Go to next page"
+msgstr ""
+
+#: views/assets/src/components/ui/pagination.jsx:73
+msgid "Next"
+msgstr ""
+
+#: views/assets/src/components/ui/pagination.jsx:88
+msgid "More pages"
+msgstr ""
+
 #: views/assets/src/components/welcome/WelcomePage.jsx:104
 msgid "View Pro Features"
+msgstr ""
+
+#: views/assets/src/components/welcome/WelcomePage.jsx:269
+msgid "Unlimited Projects"
+msgstr ""
+
+#: views/assets/src/components/welcome/WelcomePage.jsx:270
+msgid "Kanban & List Views"
+msgstr ""
+
+#: views/assets/src/components/welcome/WelcomePage.jsx:271
+msgid "Team Collaboration"
+msgstr ""
+
+#: views/assets/src/components/welcome/WelcomePage.jsx:305
+msgid "Features"
+msgstr ""
+
+#: views/assets/src/components/welcome/WelcomePage.jsx:306
+msgid "Features you can use"
+msgstr ""
+
+#: views/assets/src/components/welcome/WelcomePage.jsx:307
+msgid "Everything you need to plan, track, and ship your projects."
+msgstr ""
+
+#: views/assets/src/components/welcome/WelcomePage.jsx:332
+msgid "Resources"
+msgstr ""
+
+#: views/assets/src/components/welcome/WelcomePage.jsx:334
+msgid "Explore everything you need to get the most out of Project Manager."
 msgstr ""
 
 #: views/assets/src/hooks/useConfirm.jsx:67
 msgid "Confirm"
 msgstr ""
 
-#: views/assets/src/index.jsx:131
+#: views/assets/src/index.jsx:143
 msgid "Create reusable project templates to streamline project setup."
 msgstr ""
 
-#: views/assets/src/index.jsx:142
-msgid "Visualize your workflow with drag-and-drop boards."
-msgstr ""
-
-#: views/assets/src/index.jsx:145
+#: views/assets/src/index.jsx:154
 msgid "Plan and track project timelines with interactive Gantt charts."
 msgstr ""
 
-#: views/assets/src/index.jsx:148
+#: views/assets/src/index.jsx:157
 msgid "Create and manage project invoices with payment tracking."
 msgstr ""
 
-#: views/assets/src/index.jsx:151
+#: views/assets/src/index.jsx:160
 msgid "Project Settings"
 msgstr ""
 
-#: views/assets/src/index.jsx:151
+#: views/assets/src/index.jsx:160
 msgid "Configure project capabilities, integrations, and more."
 msgstr ""
 
-#: views/assets/src/index.jsx:154
+#: views/assets/src/index.jsx:163
 msgid "Plan and manage agile sprints to organize your team's work into focused iterations."
 msgstr ""
 
-#: views/assets/src/index.jsx:157
+#: views/assets/src/index.jsx:166
 msgid "WooCommerce Project"
 msgstr ""
 
-#: views/assets/src/index.jsx:157
+#: views/assets/src/index.jsx:166
 msgid "Automatically create projects from WooCommerce orders with product-based templates."
 msgstr ""
