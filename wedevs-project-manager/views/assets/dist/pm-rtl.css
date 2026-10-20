@@ -2083,6 +2083,9 @@
 .border-l {
   border-right-width: 1px !important;
 }
+.border-l-2 {
+  border-right-width: 2px !important;
+}
 .border-r {
   border-left-width: 1px !important;
 }
@@ -2895,6 +2898,9 @@
 }
 .pl-2\.5 {
   padding-right: 0.625rem !important;
+}
+.pl-3 {
+  padding-right: 0.75rem !important;
 }
 .pl-5 {
   padding-right: 1.25rem !important;
@@ -5966,6 +5972,9 @@ body.admin-bar [data-sonner-toaster] {
 .group\/nav:hover .group-hover\/nav\:opacity-100 {
   opacity: 1 !important;
 }
+.group\/reply:hover .group-hover\/reply\:opacity-100 {
+  opacity: 1 !important;
+}
 .group\/status:hover .group-hover\/status\:opacity-100 {
   opacity: 1 !important;
 }
@@ -6421,6 +6430,9 @@ body.admin-bar [data-sonner-toaster] {
   .sm\:px-4 {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
+  }
+  .sm\:pl-4 {
+    padding-right: 1rem !important;
   }
   .sm\:pr-12 {
     padding-left: 3rem !important;
